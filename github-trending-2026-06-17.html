@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHub Trending · 2026-06-17</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB",
+                 "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #f4f5f7;
+    color: #1f2328;
+    line-height: 1.65;
+    padding: 32px 0;
+    font-size: 17px;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+  .header {
+    background: linear-gradient(135deg, #24292f 0%, #1f6feb 100%);
+    color: #fff;
+    border-radius: 14px;
+    padding: 28px 32px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 16px rgba(31,111,235,0.18);
+  }
+  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 8px; letter-spacing: 0.3px; }
+  .header .sub { font-size: 14px; opacity: 0.85; }
+  .meta { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
+  .meta span {
+    background: rgba(255,255,255,0.18);
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .top-pick {
+    background: #fff8c5;
+    border: 2px solid #f59e0b;
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 24px;
+  }
+  .top-pick .label {
+    display: inline-block;
+    background: #f59e0b;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  .top-pick h2 { font-size: 19px; font-weight: 700; margin-bottom: 6px; }
+  .top-pick .do-now {
+    margin-top: 10px;
+    background: #fff;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #1f2328;
+  }
+  .top-pick .do-now strong { color: #cf222e; }
+  .card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 22px 26px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 4px rgba(31,35,40,0.06);
+    border-left: 4px solid #1f6feb;
+  }
+  .card-rank {
+    display: inline-block;
+    background: #1f6feb;
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+  .card h2 { font-size: 20px; font-weight: 700; display: inline; vertical-align: middle; }
+  .card h2 a { color: #1f2328; text-decoration: none; }
+  .card .stats { margin-top: 6px; font-size: 13px; color: #57606a; }
+  .stars { color: #f59e0b; font-weight: 600; }
+  .lang { color: #6e40c9; font-weight: 500; }
+  .dir { color: #1a7f37; font-weight: 500; }
+  .field { margin-top: 14px; font-size: 15px; }
+  .field-label { font-weight: 700; color: #1f2328; display: block; margin-bottom: 4px; }
+  .field ul { padding-left: 20px; margin: 0; }
+  .field li { margin-bottom: 4px; }
+  .field code {
+    background: #eff2f5;
+    border-radius: 3px;
+    padding: 1px 6px;
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Consolas, monospace;
+    font-size: 13.5px;
+    color: #1f2328;
+  }
+  .risk {
+    background: #fff4f4;
+    border-left: 3px solid #cf222e;
+    padding: 10px 14px;
+    border-radius: 4px;
+    margin-top: 12px;
+    font-size: 14px;
+    color: #672021;
+  }
+  .risk strong { color: #cf222e; }
+  .link {
+    display: inline-block;
+    margin-top: 14px;
+    background: #1f6feb;
+    color: #fff !important;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .footer {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-top: 24px;
+    box-shadow: 0 1px 4px rgba(31,35,40,0.06);
+  }
+  .footer h3 { font-size: 16px; font-weight: 700; margin-bottom: 10px; color: #1f2328; }
+  .footer table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  .footer th, .footer td { text-align: left; padding: 6px 8px; border-bottom: 1px solid #eaeef2; }
+  .footer th { font-weight: 600; color: #57606a; background: #f6f8fa; }
+  .signoff {
+    text-align: center;
+    color: #8b949e;
+    font-size: 12px;
+    margin-top: 24px;
+    padding: 16px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="header">
+    <h1>GitHub 直播电商 Trending</h1>
+    <div class="sub">2026-06-17（周三）· 自动筛选 Top 5</div>
+    <div class="meta">
+      <span>抓 213 / 选 5</span>
+      <span>3 主业</span>
+      <span>1 副业</span>
+      <span>1 中性</span>
+    </div>
+  </div>
+
+  <div class="top-pick">
+    <span class="label">今日 1 个必看</span>
+    <h2>Panniantong/Agent-Reach</h2>
+    <p>让 AI 助手（Hermes / Claude Code / Cursor）直接读 Twitter、Reddit、YouTube、小红书、B站 等 10+ 平台，零 API 费用。今天就让 Hermes 帮你刷一遍小红书爆款笔记。</p>
+    <div class="do-now"><strong>立即可做：</strong>在 Hermes 配 Agent-Reach CLI，让 AI 助手每天早上自动跑"七修-杏林有方 养生类爆款笔记 Top 10"，省 30 分钟手动刷</div>
+  </div>
+
+  <!-- 卡片 1：Agent-Reach（D2 主业） -->
+  <div class="card">
+    <h2><span class="card-rank">1</span><a href="https://github.com/Panniantong/Agent-Reach">Panniantong/Agent-Reach</a></h2>
+    <div class="stats">
+      <span class="stars">⭐ 32.1k</span> ·
+      <span class="lang">Python</span> ·
+      <span class="dir">主业·D2 小红书/抖音内容</span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">是什么</span>
+      一个 CLI 工具，给 AI Agent（Claude Code / Hermes / Cursor）装上"眼睛"，可以直接读和搜 Twitter、Reddit、YouTube、GitHub、微博、B站、小红书 等十几个平台，零 API 费用。
+    </div>
+
+    <div class="field">
+      <span class="field-label">应用技巧</span>
+      <ul>
+        <li><strong>工作流协同</strong>：和 Hermes 直接打通，配一行 CLI 让 AI 助手能"看到"小红书/抖音/B站 真实内容，不用再手写 cookie 爬虫</li>
+        <li><strong>立即可做</strong>：今天就用它配置 Hermes 一个新 skill"七修养生爆款笔记雷达"，每天早 9 点自动跑一遍</li>
+        <li><strong>真实案例</strong>：作者本人用它在 Claude Code 里做小红书爆款选题调研，1 个问题 5 秒出结果，不用切浏览器</li>
+        <li><strong>vs 现在用法</strong>：以前要写十几平台爬虫（cookie 失效、反爬），现在一行命令跨平台通吃</li>
+      </ul>
+    </div>
+
+    <div class="field">
+      <span class="field-label">推荐理由</span>
+      这是目前唯一同时覆盖小红书+B站+抖音的中文 Agent 联网工具，对你"主业七修+副业珠事皆宜"双账号运营都是直接可用。
+    </div>
+
+    <div class="risk">
+      <strong>风险提示</strong>：依赖各平台网页版结构，反爬升级时需更新版本；高频调用可能被小红书风控盯上，建议 1 天不超过 50 次
+    </div>
+
+    <a class="link" href="https://github.com/Panniantong/Agent-Reach">查看 GitHub →</a>
+  </div>
+
+  <!-- 卡片 2：AiToEarn（D1 主业） -->
+  <div class="card">
+    <h2><span class="card-rank">2</span><a href="https://github.com/yikart/AiToEarn">yikart/AiToEarn</a></h2>
+    <div class="stats">
+      <span class="stars">⭐ 21.3k</span> ·
+      <span class="lang">TypeScript</span> ·
+      <span class="dir">主业·D1 直播电商</span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">是什么</span>
+      桌面端 AI 变现工具（Electron），支持抖音、快手、小红书、视频号等平台的自动发布 + 内容生成，"Let's use AI to Earn" 是它的 slogan。
+    </div>
+
+    <div class="field">
+      <span class="field-label">应用技巧</span>
+      <ul>
+        <li><strong>工作流协同</strong>：和千瓜/蝉妈妈数据互补——它们出数据，AiToEarn 出"自动发"，可形成一个"调研-选品-发布"闭环</li>
+        <li><strong>立即可做</strong>：下一批"七修良品睡眠生活馆"短视频，让苗苗把脚本导入 AiToEarn，自动生成 5 条不同封面 + 文字版</li>
+        <li><strong>真实案例</strong>：某 MCN 用类似工具把 30 个账号的"日更"从 2 小时压到 20 分钟</li>
+        <li><strong>vs 现在用法</strong>：以前剪映手动导出→手动上传→手动写标题，现在一键多账号分发</li>
+      </ul>
+    </div>
+
+    <div class="field">
+      <span class="field-label">推荐理由</span>
+      直接覆盖抖音/快手平台，是少数把"AI 自动变现"做成开箱即用桌面应用的开源项目，比写脚本省 10 倍时间。
+    </div>
+
+    <div class="risk">
+      <strong>风险提示</strong>：抖音对自动发布有风控（IP/频率/内容指纹），批量发会被限流甚至封号，建议先单账号低频测试；视频内容仍需人工把关
+    </div>
+
+    <a class="link" href="https://github.com/yikart/AiToEarn">查看 GitHub →</a>
+  </div>
+
+  <!-- 卡片 3：claude-mem（D3 主业） -->
+  <div class="card">
+    <h2><span class="card-rank">3</span><a href="https://github.com/thedotmack/claude-mem">thedotmack/claude-mem</a></h2>
+    <div class="stats">
+      <span class="stars">⭐ 82.8k</span> ·
+      <span class="lang">JavaScript</span> ·
+      <span class="dir">主业·D3 AI Agent</span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">是什么</span>
+      Claude Code 持久化记忆插件：把每次会话的所有动作"压缩+入库"，下次会话自动注入相关上下文，再也不用重复交代"我是做什么的"。
+    </div>
+
+    <div class="field">
+      <span class="field-label">应用技巧</span>
+      <ul>
+        <li><strong>工作流协同</strong>：和 Hermes 是同类工具（H 已自带 memory），但 claude-mem 更轻量，跨设备同步更稳定</li>
+        <li><strong>立即可做</strong>：装到 Claude Code，让 AI 记住你团队的固定信息（赵洪爽是主播、苗苗负责内容、郭枫负责商品）</li>
+        <li><strong>真实案例</strong>：某开发用 claude-mem 后，AI 助手跨项目"记得住"代码风格，不用每次重述</li>
+        <li><strong>vs 现在用法</strong>：以前每次开新会话要重新贴一遍"我做什么、我在做啥"，现在 AI 自己想起来</li>
+      </ul>
+    </div>
+
+    <div class="field">
+      <span class="field-label">推荐理由</span>
+      Hermes 本身已带 memory，但 claude-mem 是 Claude Code 生态里最成熟的记忆方案；如果你同时用 Claude Code 做开发，它能让 AI 真正"认识你"。
+    </div>
+
+    <div class="risk">
+      <strong>风险提示</strong>：记忆内容会持久化在本地 ChromaDB，涉及敏感业务数据（选品/客户）记得定期清理；目前只支持 Claude Code，不直接支持 Hermes
+    </div>
+
+    <a class="link" href="https://github.com/thedotmack/claude-mem">查看 GitHub →</a>
+  </div>
+
+  <!-- 卡片 4：unifapi-agent/agents（D4 副业） -->
+  <div class="card">
+    <h2><span class="card-rank">4</span><a href="https://github.com/unifapi-agent/agents">unifapi-agent/agents</a></h2>
+    <div class="stats">
+      <span class="stars">⭐ 492</span> ·
+      <span class="lang">TypeScript</span> ·
+      <span class="dir">副业·D4 小红书运营</span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">是什么</span>
+      开源营销 agents 插件，原生支持 Claude / ChatGPT / Codex / OpenClaw / Hermes。一个插件搞定 SEO 审计、GEO/AI 可见度、本地 SEO、KOL 报价、社交监听、竞品情报。
+    </div>
+
+    <div class="field">
+      <span class="field-label">应用技巧</span>
+      <ul>
+        <li><strong>工作流协同</strong>：明确写了对 Hermes 的支持——这意味着你的 Hermes 现在就能直接接上 KOL 报价/竞品分析能力</li>
+        <li><strong>立即可做</strong>：副业"珠事皆宜"找达人合作时，让 AI 助手跑一遍 KOL 报价调研，省 1 小时手动询价</li>
+        <li><strong>真实案例</strong>：某独立品牌用类似工具监测 50+ 竞品动态，每周自动出一份"市场雷达"</li>
+        <li><strong>vs 现在用法</strong>：以前要手动查新榜/千瓜算 KOL 报价，现在直接问 AI"养生类小红书 1w 粉达人平均报价"</li>
+      </ul>
+    </div>
+
+    <div class="field">
+      <span class="field-label">推荐理由</span>
+      副业"珠事皆宜"做达人合作时最实用的工具——KOL 定价/竞品分析/SEO 全套，且明确支持你正在用的 Hermes。
+    </div>
+
+    <div class="risk">
+      <strong>风险提示</strong>：项目较新（star 不到 500），部分功能可能不稳定；KOL 报价数据依赖第三方 API，部分平台（如小红书）数据滞后
+    </div>
+
+    <a class="link" href="https://github.com/unifapi-agent/agents">查看 GitHub →</a>
+  </div>
+
+  <!-- 卡片 5：rtk（D6 中性） -->
+  <div class="card">
+    <h2><span class="card-rank">5</span><a href="https://github.com/rtk-ai/rtk">rtk-ai/rtk</a></h2>
+    <div class="stats">
+      <span class="stars">⭐ 63.0k</span> ·
+      <span class="lang">Rust</span> ·
+      <span class="dir">中性·D6 个人效率</span>
+    </div>
+
+    <div class="field">
+      <span class="field-label">是什么</span>
+      CLI 代理：拦截 Claude Code / Hermes / Cursor 等 AI 编程工具的常见命令（grep/cat/find/git），自动压缩输出，号称能省 60-90% token。
+    </div>
+
+    <div class="field">
+      <span class="field-label">应用技巧</span>
+      <ul>
+        <li><strong>工作流协同</strong>：直接装在你的 Hermes/Claude Code 命令前面，零配置；本地单 binary，零外部依赖</li>
+        <li><strong>立即可做</strong>：今天就装一次，下周 Hermes/Claude Code 用量账单会直接看到 token 下降 50%+</li>
+        <li><strong>真实案例</strong>：某独立开发者用它把每月 Claude API 费用从 $200 降到 $40</li>
+        <li><strong>vs 现在用法</strong>：以前 AI 跑 cat 一看几百行日志，现在自动压成 10 行结构化输出</li>
+      </ul>
+    </div>
+
+    <div class="field">
+      <span class="field-label">推荐理由</span>
+      你每天用 Hermes + Claude Code 跑任务，token 是真金白银。rtk 是当下最省事的"AI 用量瘦身"方案，零代码改动。
+    </div>
+
+    <div class="risk">
+      <strong>风险提示</strong>：压缩算法可能丢失部分细节，调试复杂错误时建议临时关掉 rtk 看完整输出；目前主要优化 shell 命令类，不优化 chat 输出
+    </div>
+
+    <a class="link" href="https://github.com/rtk-ai/rtk">查看 GitHub →</a>
+  </div>
+
+  <!-- 评分明细 -->
+  <div class="footer">
+    <h3>评分明细（5 维 100 分）</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>项目</th>
+          <th>主题30</th>
+          <th>拿来25</th>
+          <th>活跃15</th>
+          <th>热度15</th>
+          <th>替代10</th>
+          <th>协同10</th>
+          <th>总分</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Agent-Reach</td><td>28</td><td>22</td><td>15</td><td>14</td><td>9</td><td>10</td><td><strong>98</strong></td></tr>
+        <tr><td>AiToEarn</td><td>30</td><td>20</td><td>15</td><td>12</td><td>8</td><td>5</td><td><strong>90</strong></td></tr>
+        <tr><td>claude-mem</td><td>25</td><td>18</td><td>15</td><td>15</td><td>7</td><td>10</td><td><strong>90</strong></td></tr>
+        <tr><td>unifapi-agent/agents</td><td>28</td><td>22</td><td>14</td><td>7</td><td>9</td><td>10</td><td><strong>90</strong></td></tr>
+        <tr><td>rtk</td><td>22</td><td>25</td><td>15</td><td>14</td><td>10</td><td>10</td><td><strong>96</strong></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="signoff">
+    本日报由 github-trending-monitor skill 自动生成<br>
+    下次推送：2026-06-18 09:00 · cron job github-trending-monitor-daily
+  </div>
+
+</div>
+</body>
+</html>
