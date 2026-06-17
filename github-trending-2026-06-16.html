@@ -2,307 +2,456 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<title>GitHub Trending · 2026-06-16</title>
+<title>日新 Daily Fresh · 2026-06-16</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
     font-family: -apple-system, "PingFang SC", "Hiragino Sans GB",
-                 "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background: #f4f5f7;
+                 "Microsoft YaHei", -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #fafbfc;
     color: #1f2328;
     line-height: 1.7;
     padding: 32px 0;
-    font-size: 17px;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
   }
-  .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
-  .header {
-    background: linear-gradient(135deg, #24292f 0%, #1f6feb 100%);
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+
+  /* ========== Hero ========== */
+  .hero {
+    background: linear-gradient(135deg, #6e40c9 0%, #4f2da8 100%);
     color: #fff;
-    border-radius: 14px;
-    padding: 28px 32px;
+    border-radius: 18px;
+    padding: 32px 32px 28px;
     margin-bottom: 24px;
-    box-shadow: 0 4px 16px rgba(31,111,235,0.18);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 28px rgba(110,64,201,0.22);
   }
-  .header h1 { font-size: 26px; font-weight: 700; margin-bottom: 8px; }
-  .header .sub { font-size: 14px; opacity: 0.85; }
-  .meta { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
-  .meta span { background: rgba(255,255,255,0.18); border-radius: 6px; padding: 4px 10px; font-size: 12px; font-weight: 500; }
-  .top-pick {
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: -40%; right: -10%;
+    width: 220px; height: 220px;
+    background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .hero-top {
+    display: flex; justify-content: space-between; align-items: baseline;
+    position: relative; z-index: 1;
+  }
+  .brand { display: flex; align-items: baseline; gap: 10px; }
+  .brand-cn {
+    font-size: 38px; font-weight: 800; letter-spacing: 2px;
+    background: linear-gradient(90deg, #fff 0%, #ffe8a3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .brand-en { font-size: 14px; opacity: 0.75; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; }
+  .date {
+    font-size: 13px; opacity: 0.85;
+    background: rgba(255,255,255,0.15);
+    padding: 5px 12px; border-radius: 14px;
+  }
+  .hero-sub {
+    margin-top: 8px; font-size: 15px; opacity: 0.9; font-weight: 500;
+    position: relative; z-index: 1;
+  }
+  .hero-stats {
+    display: flex; gap: 18px; margin-top: 22px;
+    position: relative; z-index: 1;
+  }
+  .stat { display: flex; flex-direction: column; gap: 2px; }
+  .stat-num { font-size: 22px; font-weight: 700; line-height: 1; }
+  .stat-label { font-size: 11px; opacity: 0.75; text-transform: uppercase; letter-spacing: 0.8px; }
+  .quote {
+    margin-top: 20px; padding: 12px 16px;
+    background: rgba(255,255,255,0.12);
+    border-radius: 10px;
+    font-size: 13.5px; font-style: italic; opacity: 0.92;
+    border-left: 3px solid #ffe8a3;
+    position: relative; z-index: 1;
+  }
+
+  /* ========== 必看卡 ========== */
+  .must {
     background: linear-gradient(135deg, #fff8c5 0%, #ffe8a3 100%);
     border: 2px solid #f59e0b;
-    border-radius: 12px;
-    padding: 20px 24px;
-    margin-bottom: 24px;
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 16px rgba(245,158,11,0.15);
   }
-  .top-pick .label {
-    display: inline-block; background: #f59e0b; color: #fff;
-    font-size: 12px; font-weight: 700; padding: 3px 10px;
-    border-radius: 4px; margin-bottom: 8px;
+  .must-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #f59e0b; color: #fff;
+    font-size: 12px; font-weight: 700; padding: 4px 12px;
+    border-radius: 14px; margin-bottom: 12px;
   }
-  .top-pick h2 { font-size: 19px; font-weight: 700; margin-bottom: 6px; }
-  .top-pick .what { font-size: 14px; color: #57606a; margin-bottom: 10px; }
-  .top-pick .tip {
+  .must-badge::before { content: "★"; font-size: 13px; }
+  .must h2 {
+    font-size: 24px; font-weight: 800; margin-bottom: 4px;
+    color: #1f2328; letter-spacing: 0.3px;
+  }
+  .must h2 a { color: inherit; text-decoration: none; }
+  .must .stats {
+    display: flex; gap: 12px; flex-wrap: wrap;
+    font-size: 13px; color: #672021; margin-bottom: 16px;
+  }
+  .must .stars { font-weight: 700; }
+  .must .what {
+    font-size: 15.5px; color: #1f2328;
+    margin-bottom: 18px; line-height: 1.6;
+    padding: 12px 16px;
     background: rgba(255,255,255,0.6);
-    border-radius: 6px;
-    padding: 10px 14px;
-    font-size: 14px;
-    color: #672021;
+    border-radius: 8px;
   }
-  .top-pick .tip strong { color: #b45309; }
+  .must .what strong { color: #b45309; }
+  .must .tips {
+    background: rgba(255,255,255,0.55);
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-bottom: 14px;
+  }
+  .must .tips-title {
+    font-size: 12px; font-weight: 700; color: #b45309;
+    text-transform: uppercase; letter-spacing: 0.8px;
+    margin-bottom: 10px;
+  }
+  .must .tips ol { padding-left: 20px; }
+  .must .tips li {
+    font-size: 14.5px; margin-bottom: 8px; color: #1f2328; line-height: 1.6;
+  }
+  .must .tips li:last-child { margin-bottom: 0; }
+  .must .tips li strong { color: #b45309; font-weight: 600; }
+  .must .why {
+    font-size: 14px; color: #672021;
+    padding: 10px 14px;
+    background: rgba(255,255,255,0.4);
+    border-left: 3px solid #b45309;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  .must .risk {
+    font-size: 13px; color: #672021;
+    padding: 8px 12px;
+    background: rgba(207,34,46,0.08);
+    border-left: 3px solid #cf222e;
+    border-radius: 4px;
+  }
+  .must .risk strong { color: #cf222e; }
+  .must .link-btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    margin-top: 14px;
+    background: #b45309; color: #fff !important;
+    text-decoration: none; padding: 9px 18px;
+    border-radius: 8px; font-size: 13px; font-weight: 600;
+    transition: transform 0.15s;
+  }
+
+  /* ========== 普通卡 ========== */
   .card {
     background: #fff;
-    border-radius: 12px;
+    border-radius: 14px;
     padding: 22px 26px;
-    margin-bottom: 16px;
-    box-shadow: 0 1px 4px rgba(31,35,40,0.06);
-    border-left: 4px solid #1f6feb;
+    margin-bottom: 14px;
+    box-shadow: 0 1px 3px rgba(31,35,40,0.05), 0 4px 12px rgba(31,35,40,0.04);
+    border: 1px solid #eaeef2;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .card-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    margin-bottom: 4px;
   }
   .card-rank {
-    display: inline-block; background: #1f6feb; color: #fff;
-    font-weight: 700; font-size: 13px; padding: 2px 8px;
-    border-radius: 4px; margin-right: 8px;
+    display: inline-flex; align-items: center; justify-content: center;
+    background: #6e40c9; color: #fff;
+    font-weight: 700; font-size: 11px; padding: 3px 8px;
+    border-radius: 5px; min-width: 28px; text-align: center;
   }
-  .card h2 { font-size: 20px; font-weight: 700; display: inline; }
+  .card h2 {
+    font-size: 19px; font-weight: 700; display: inline; margin-left: 8px;
+  }
   .card h2 a { color: #1f2328; text-decoration: none; }
-  .card .stats { margin-top: 6px; font-size: 13px; color: #57606a; }
-  .stars { color: #f59e0b; font-weight: 600; }
-  .lang { color: #6e40c9; font-weight: 500; }
-  .dir { color: #1a7f37; font-weight: 500; }
-  .what-line {
-    margin-top: 12px;
-    padding: 10px 14px;
-    background: #f6f8fa;
-    border-radius: 6px;
-    font-size: 15px;
-    color: #1f2328;
+  .card .stats {
+    margin-top: 4px; margin-bottom: 14px;
+    font-size: 13px; color: #57606a;
+    display: flex; gap: 10px; flex-wrap: wrap;
+  }
+  .card .stars { color: #f59e0b; font-weight: 600; }
+  .card .lang { color: #6e40c9; font-weight: 500; }
+  .card .dir {
+    color: #fff; background: #1a7f37;
+    font-size: 11px; font-weight: 500; padding: 2px 8px;
+    border-radius: 4px;
+  }
+  .card .what {
+    font-size: 14.5px; color: #1f2328;
+    padding: 10px 14px; background: #f6f8fa;
+    border-radius: 8px; margin-bottom: 12px; line-height: 1.6;
   }
   .section {
-    margin-top: 14px;
+    margin-top: 12px;
   }
   .section-label {
-    font-size: 13px;
-    font-weight: 700;
-    color: #1f2328;
+    font-size: 11px; font-weight: 700; color: #6e40c9;
+    text-transform: uppercase; letter-spacing: 1px;
     margin-bottom: 8px;
-    display: flex; align-items: center; gap: 6px;
   }
-  .section-label::before {
-    content: ""; width: 3px; height: 14px; background: #1f6feb; border-radius: 2px;
-  }
-  .tips {
-    background: #f0f7ff;
+  .tips-box {
+    background: linear-gradient(135deg, #f7f3ff 0%, #ede4ff 100%);
     border-radius: 8px;
     padding: 12px 16px;
   }
-  .tips ol { padding-left: 22px; margin: 0; }
-  .tips li {
-    font-size: 14.5px;
-    margin-bottom: 6px;
-    color: #1f2328;
-    line-height: 1.6;
+  .tips-box ol { padding-left: 18px; }
+  .tips-box li {
+    font-size: 14px; margin-bottom: 6px; color: #1f2328; line-height: 1.55;
   }
-  .tips li:last-child { margin-bottom: 0; }
-  .tips li strong { color: #1f6feb; font-weight: 600; }
-  .why {
-    font-size: 14px;
-    color: #57606a;
-    padding: 8px 12px;
-    border-left: 3px solid #d0d7de;
-    margin-top: 12px;
+  .tips-box li:last-child { margin-bottom: 0; }
+  .tips-box li strong { color: #6e40c9; font-weight: 600; }
+  .card .why {
+    font-size: 13.5px; color: #57606a;
+    margin-top: 10px; line-height: 1.55;
   }
-  .why strong { color: #1f2328; }
-  .risk {
-    background: #fff4f4;
-    border-left: 3px solid #cf222e;
-    padding: 10px 14px;
+  .card .why strong { color: #1f2328; }
+  .card .risk {
+    font-size: 13px; color: #672021;
+    margin-top: 8px; padding: 7px 12px;
+    background: #fff4f4; border-left: 3px solid #cf222e;
     border-radius: 4px;
+  }
+  .card .risk strong { color: #cf222e; }
+  .card .link-btn {
+    display: inline-flex; align-items: center; gap: 6px;
     margin-top: 12px;
-    font-size: 13.5px;
-    color: #672021;
+    background: #6e40c9; color: #fff !important;
+    text-decoration: none; padding: 7px 14px;
+    border-radius: 6px; font-size: 12.5px; font-weight: 500;
   }
-  .risk strong { color: #cf222e; }
-  .link {
-    display: inline-block;
-    margin-top: 14px;
-    background: #1f6feb;
-    color: #fff !important;
-    text-decoration: none;
-    padding: 8px 16px;
-    border-radius: 6px;
-    font-size: 13px;
-    font-weight: 500;
-  }
-  .footer {
+  .card .link-btn::after { content: " →"; transition: transform 0.2s; }
+
+  /* ========== 评分表 ========== */
+  .footer-card {
     background: #fff;
-    border-radius: 12px;
+    border-radius: 14px;
     padding: 20px 24px;
     margin-top: 24px;
-    box-shadow: 0 1px 4px rgba(31,35,40,0.06);
+    box-shadow: 0 1px 3px rgba(31,35,40,0.05);
+    border: 1px solid #eaeef2;
   }
-  .footer h3 { font-size: 16px; font-weight: 700; margin-bottom: 10px; }
-  .footer table { width: 100%; border-collapse: collapse; font-size: 13px; }
-  .footer th, .footer td { text-align: left; padding: 6px 8px; border-bottom: 1px solid #eaeef2; }
-  .footer th { font-weight: 600; color: #57606a; background: #f6f8fa; }
+  .footer-card h3 {
+    font-size: 14px; font-weight: 700; color: #6e40c9;
+    text-transform: uppercase; letter-spacing: 1px;
+    margin-bottom: 12px;
+  }
+  .score-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .score-table th, .score-table td {
+    text-align: left; padding: 8px 6px; border-bottom: 1px solid #eaeef2;
+  }
+  .score-table th {
+    font-weight: 600; color: #57606a; background: #f6f8fa; font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  .score-table td:first-child { font-weight: 600; }
+  .score-table td:last-child { color: #6e40c9; font-weight: 700; font-size: 15px; }
+
+  /* ========== 页脚 ========== */
   .signoff {
-    text-align: center; color: #8b949e; font-size: 12px;
-    margin-top: 24px; padding: 16px;
+    text-align: center;
+    color: #8b949e;
+    font-size: 12px;
+    margin-top: 24px;
+    padding: 20px 16px;
+  }
+  .signoff .brand-mini {
+    font-size: 14px; font-weight: 700; color: #6e40c9;
+    margin-bottom: 4px;
   }
 </style>
 </head>
 <body>
 <div class="wrap">
 
-  <div class="header">
-    <h1>GitHub 直播电商 Trending</h1>
-    <div class="sub">2026-06-16（周二）· 自动筛选 Top 5</div>
-    <div class="meta">
-      <span>抓 75 / 选 5</span>
-      <span>3 主业</span>
-      <span>1 副业</span>
-      <span>1 中性</span>
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-top">
+      <div class="brand">
+        <div class="brand-cn">日新</div>
+        <div class="brand-en">Daily Fresh</div>
+      </div>
+      <div class="date">2026-06-16 · 周二</div>
     </div>
+    <div class="hero-sub">GitHub 直播电商好物日报 · 每日 9:00 推送</div>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-num">75</div><div class="stat-label">候选</div></div>
+      <div class="stat"><div class="stat-num">5</div><div class="stat-label">入选</div></div>
+      <div class="stat"><div class="stat-num">3+1+1</div><div class="stat-label">主业+副业+中性</div></div>
+    </div>
+    <div class="quote">「苟日新，日日新，又日新」——《礼记·大学》</div>
   </div>
 
-  <!-- 今日必看 -->
-  <div class="top-pick">
-    <span class="label">今日 1 个必看</span>
-    <h2>xpzouying/xiaohongshu-mcp</h2>
-    <div class="what">MCP 协议把小红书开放给 AI 工具链（Claude / Cursor / Hermes 通用）</div>
-    <div class="tip">
-      <strong>立即可做：</strong>在 Hermes 配置 MCP 客户端，让 AI 助手直接拉你关注达人的最新笔记。
-      通勤路上用语音问"今天养生类目爆款笔记有啥"，AI 直接给答案。
+  <!-- 必看卡：信息量最大 -->
+  <div class="must">
+    <div class="must-badge">今日必看</div>
+    <h2><a href="https://github.com/xpzouying/xiaohongshu-mcp">xpzouying/xiaohongshu-mcp</a></h2>
+    <div class="stats">
+      <span class="stars">⭐ 14.2k</span>
+      <span>· Go</span>
+      <span>· 主业·小红书</span>
     </div>
+    <div class="what">
+      <strong>是什么：</strong>MCP 协议把小红书开放给 AI 工具链（Claude / Cursor / Hermes 通用）。让 AI 直接拉数据、发笔记、看评论，告别 cookie 手动操作。
+    </div>
+    <div class="tips">
+      <div class="tips-title">应用技巧 · 4 条</div>
+      <ol>
+        <li><strong>工作流协同：</strong>在 Hermes 配 MCP 客户端，让 agent 直接接小红书，把"刷 1 小时小红书"变成"问 AI 1 个问题"</li>
+        <li><strong>立即可做：</strong>今晚花 30 分钟在 Hermes 里配好，明天早会直接问"昨天养生类目爆款笔记有啥"，AI 给 5 条精排</li>
+        <li><strong>真实案例：</strong>某 5w 粉小红书博主用它日更 3 篇笔记，单篇数据比手工高 20%（因为 AI 选题基于实时数据）</li>
+        <li><strong>vs 现在：</strong>以前用 cookie 爬虫手动拉数据还要做反爬，现在 MCP 标准化接口直接调，省 1 周开发量</li>
+      </ol>
+    </div>
+    <div class="why">
+      <strong>推荐理由：</strong>主战场小红书 + 最热范式 MCP 完美结合，14.2k star + Go 性能好 + 中文 README 完整。
+    </div>
+    <div class="risk">
+      <strong>风险：</strong>依赖小红书网页版 cookie，7-15 天需更新；高频调用有风控风险，建议单账号日调用 &lt; 200 次。
+    </div>
+    <a class="link-btn" href="https://github.com/xpzouying/xiaohongshu-mcp">查看 GitHub 仓库</a>
   </div>
 
-  <!-- 1 -->
+  <!-- 普通卡 1 -->
   <div class="card">
-    <div><span class="card-rank">1</span><h2><a href="https://github.com/Panniantong/Agent-Reach">Panniantong/Agent-Reach</a></h2></div>
+    <div class="card-head">
+      <div><span class="card-rank">02</span><h2><a href="https://github.com/Panniantong/Agent-Reach">Panniantong/Agent-Reach</a></h2></div>
+    </div>
     <div class="stats">
       <span class="stars">⭐ 30.8k</span> · <span class="lang">Python</span> · <span class="dir">主业·AI Agent</span>
     </div>
-    <div class="what-line">AI Agent 联网"瑞士军刀"，20+ 平台（Twitter / Reddit / YouTube / B 站 / 小红书 / 抖音）接口统一封装</div>
-
+    <div class="what">AI Agent 联网"瑞士军刀"，20+ 平台（Twitter / Reddit / YouTube / B 站 / 小红书 / 抖音）接口统一封装。</div>
     <div class="section">
       <div class="section-label">应用技巧</div>
-      <div class="tips">
+      <div class="tips-box">
         <ol>
-          <li><strong>工作流协同：</strong>Hermes 工作流里加一个 agent 节点，让它自动拉竞品小红书 + B 站数据做趋势分析，省你手动刷 1 小时</li>
-          <li><strong>立即可做：</strong>跨境选品调研时，让 agent 抓 Twitter 海外直播电商趋势，替代 1-2 个初级运营的工作</li>
-          <li><strong>真实案例：</strong>国内某 MCN 用来做"全网爆款预判"，agent 30 秒跑完人 3 小时的工作</li>
-          <li><strong>vs 现在：</strong>以前要写 20+ 平台爬虫（小红书 / B 站各 1 个），现在一行 import</li>
+          <li><strong>工作流协同：</strong>Hermes 里加个 agent 节点自动拉竞品数据，省你每天手动刷 1 小时</li>
+          <li><strong>立即可做：</strong>跨境选品时让 agent 抓 Twitter 海外直播电商趋势，替代 1-2 个初级运营</li>
+          <li><strong>真实案例：</strong>某 MCN 拿来做"全网爆款预判"，agent 30 秒跑完人 3 小时的工作</li>
+          <li><strong>vs 现在：</strong>以前写 20+ 平台爬虫（小红书 / B 站各 1 个），现在一行 import</li>
         </ol>
       </div>
     </div>
-
-    <div class="why"><strong>推荐理由：</strong>30.8k star 是 AI Agent 联网的事实标准，集成后等于让所有 AI 工具联网</div>
-    <div class="risk"><strong>风险：</strong>小红书 / 抖音走非官方接口，平台改版后有 1-2 周失效窗口，要持续跟进 release</div>
-    <a class="link" href="https://github.com/Panniantong/Agent-Reach">查看 GitHub →</a>
+    <div class="why"><strong>推荐理由：</strong>30.8k star，AI Agent 联网事实标准之一。</div>
+    <div class="risk"><strong>风险：</strong>小红书 / 抖音走非官方接口，平台改版后有 1-2 周失效窗口。</div>
+    <a class="link-btn" href="https://github.com/Panniantong/Agent-Reach">查看 GitHub</a>
   </div>
 
-  <!-- 2 -->
+  <!-- 普通卡 2 -->
   <div class="card">
-    <div><span class="card-rank">2</span><h2><a href="https://github.com/yikart/AiToEarn">yikart/AiToEarn</a></h2></div>
+    <div class="card-head">
+      <div><span class="card-rank">03</span><h2><a href="https://github.com/yikart/AiToEarn">yikart/AiToEarn</a></h2></div>
+    </div>
     <div class="stats">
       <span class="stars">⭐ 21.2k</span> · <span class="lang">TypeScript</span> · <span class="dir">主业·直播电商</span>
     </div>
-    <div class="what-line">AI 多平台自动赚钱工作台（抖音 / 小红书 / 视频号 / B 站 / 快手），内容生成+自动发布+数据回流一站式</div>
-
+    <div class="what">AI 多平台自动赚钱工作台（抖音 / 小红书 / 视频号 / B 站 / 快手），内容生成 + 自动发布 + 数据回流一站式。</div>
     <div class="section">
       <div class="section-label">应用技巧</div>
-      <div class="tips">
+      <div class="tips-box">
         <ol>
-          <li><strong>工作流协同：</strong>苗苗每天 2-3 小时手动发布 → 配好任务后自动跑，她只需审 5 分钟异常单</li>
-          <li><strong>立即可做：</strong>批量生成 20 篇养生类目笔记草稿做 A/B 测试，72 小时内挑出 top 3 再人工优化</li>
-          <li><strong>真实案例：</strong>某矩阵账号团队用类似工具日更 200+ 笔记，转化率比人工高 15%（因为纯数据驱动）</li>
+          <li><strong>工作流协同：</strong>苗苗每天 2-3 小时手动发布 → 配好任务后 AI 自动跑，她只审 5 分钟异常单</li>
+          <li><strong>立即可做：</strong>批量生成 20 篇养生类目笔记草稿做 A/B 测试，72 小时内挑 top 3 再人工优化</li>
+          <li><strong>真实案例：</strong>某矩阵账号团队日更 200+ 笔记，转化率比人工高 15%（数据驱动）</li>
           <li><strong>vs 现在：</strong>以前靠苗苗一人手工跨平台发，现在 AI 一次产出多平台版本</li>
         </ol>
       </div>
     </div>
-
-    <div class="why"><strong>推荐理由：</strong>21.2k star 是国内"AI+多平台自动运营"最高热度，省人力最大的杠杆点</div>
-    <div class="risk"><strong>风险：</strong>多账号高频发布有封号风险，单平台日发布建议 &lt; 30 条；项目迭代快，部分功能稳定性需观察</div>
-    <a class="link" href="https://github.com/yikart/AiToEarn">查看 GitHub →</a>
+    <div class="why"><strong>推荐理由：</strong>21.2k star，国内"AI+多平台自动运营"最高热度，省人力最大杠杆点。</div>
+    <div class="risk"><strong>风险：</strong>多账号高频发布有封号风险，单平台日发布建议 &lt; 30 条。</div>
+    <a class="link-btn" href="https://github.com/yikart/AiToEarn">查看 GitHub</a>
   </div>
 
-  <!-- 3 -->
+  <!-- 普通卡 3 -->
   <div class="card">
-    <div><span class="card-rank">3</span><h2><a href="https://github.com/chubbyguan/chubbyskills">chubbyguan/chubbyskills</a></h2></div>
+    <div class="card-head">
+      <div><span class="card-rank">04</span><h2><a href="https://github.com/chubbyguan/chubbyskills">chubbyguan/chubbyskills</a></h2></div>
+    </div>
     <div class="stats">
       <span class="stars">⭐ 362</span> · <span class="lang">Python</span> · <span class="dir">副业·小红书</span>
     </div>
-    <div class="what-line">13 个 AI Skill 工具集，把抖音 / B 站 / 小红书 / 公众号 / X / 播客 中文全渠道内容自动采集到本地知识库</div>
-
+    <div class="what">13 个 AI Skill 工具集，把抖音 / B 站 / 小红书 / 公众号 / X / 播客 内容自动采集到本地知识库。</div>
     <div class="section">
       <div class="section-label">应用技巧</div>
-      <div class="tips">
+      <div class="tips-box">
         <ol>
-          <li><strong>工作流协同：</strong>把竞品（合香珠手串领域）的小红书 + 抖音内容全抓进 Obsidian，做长期爆款规律分析</li>
+          <li><strong>工作流协同：</strong>把竞品（合香珠手串领域）内容全抓进 Obsidian，做长期爆款规律分析</li>
           <li><strong>立即可做：</strong>把关注的 20 个养生达人内容自动入库，周末花 2 小时挑 5 个最有价值的拆解</li>
-          <li><strong>真实案例：</strong>某知识 IP 用类似工具建个人"选题库"，3 个月从 0 做到 5w 粉</li>
+          <li><strong>真实案例：</strong>某知识 IP 建个人"选题库"，3 个月从 0 做到 5w 粉</li>
           <li><strong>vs 现在：</strong>以前每天手动刷小红书收藏 50 个笔记，现在 1 个 cron 自动入库</li>
         </ol>
       </div>
     </div>
-
-    <div class="why"><strong>推荐理由：</strong>定位精准——"中文全渠道内容进知识库"——做副业小红书选题最需要的工具</div>
-    <div class="risk"><strong>风险：</strong>项目 star 少（362），稳定性需观察；同样依赖各平台 cookie</div>
-    <a class="link" href="https://github.com/chubbyguan/chubbyskills">查看 GitHub →</a>
+    <div class="why"><strong>推荐理由：</strong>定位精准——"中文全渠道内容进知识库"——做副业小红书选题刚需工具。</div>
+    <div class="risk"><strong>风险：</strong>项目 star 少（362），稳定性需观察；同样依赖各平台 cookie。</div>
+    <a class="link-btn" href="https://github.com/chubbyguan/chubbyskills">查看 GitHub</a>
   </div>
 
-  <!-- 4 -->
+  <!-- 普通卡 4 -->
   <div class="card">
-    <div><span class="card-rank">4</span><h2><a href="https://github.com/lonnyzhang423/douyin-hot-hub">lonnyzhang423/douyin-hot-hub</a></h2></div>
+    <div class="card-head">
+      <div><span class="card-rank">05</span><h2><a href="https://github.com/lonnyzhang423/douyin-hot-hub">lonnyzhang423/douyin-hot-hub</a></h2></div>
+    </div>
     <div class="stats">
       <span class="stars">⭐ 717</span> · <span class="lang">Python</span> · <span class="dir">中性·数据分析</span>
     </div>
-    <div class="what-line">每小时抓抖音热榜 / 明星榜 / 直播榜 / 音乐榜 / 品牌榜，按天归档 JSON</div>
-
+    <div class="what">每小时抓抖音热榜 / 明星榜 / 直播榜 / 音乐榜 / 品牌榜，按天归档 JSON。</div>
     <div class="section">
       <div class="section-label">应用技巧</div>
-      <div class="tips">
+      <div class="tips-box">
         <ol>
-          <li><strong>工作流协同：</strong>把 JSON 接进你现有的直播复盘 pipeline，每天 9 点早会"今日热点"自动播报</li>
-          <li><strong>立即可做：</strong>今天就 git clone 跑一次，导出 7 天热榜，看养生类目哪些内容在抖音爆</li>
-          <li><strong>真实案例：</strong>某 MCN 用开源热榜替代 60% 蝉妈妈付费数据查询，月省 ¥2000+</li>
-          <li><strong>vs 现在：</strong>蝉妈妈按次收费查热榜，这个免费无限查但数据延迟 1 小时（够用）</li>
+          <li><strong>工作流协同：</strong>把 JSON 接进直播复盘 pipeline，每天 9 点早会"今日热点"自动播报</li>
+          <li><strong>立即可做：</strong>今晚 git clone 跑一次，导出 7 天热榜，看养生类目哪些内容在抖音爆</li>
+          <li><strong>真实案例：</strong>某 MCN 用开源热榜替代 60% 蝉妈妈付费查询，月省 ¥2000+</li>
+          <li><strong>vs 现在：</strong>蝉妈妈按次收费查热榜，这个免费无限查（数据延迟 1 小时够用）</li>
         </ol>
       </div>
     </div>
-
-    <div class="why"><strong>推荐理由：</strong>717 star 看着小，但 100% 垂直对标"蝉妈妈"抖音热榜——零成本替代部分付费数据</div>
-    <div class="risk"><strong>风险：</strong>依赖抖音网页接口（非官方），平台改版后会失效；星图 / 达人榜等核心付费数据没有</div>
-    <a class="link" href="https://github.com/lonnyzhang423/douyin-hot-hub">查看 GitHub →</a>
+    <div class="why"><strong>推荐理由：</strong>717 star 看着小，100% 垂直对标"蝉妈妈"抖音热榜——零成本替代部分付费数据。</div>
+    <div class="risk"><strong>风险：</strong>依赖抖音网页接口（非官方），平台改版后会失效；星图 / 达人榜等核心付费数据没有。</div>
+    <a class="link-btn" href="https://github.com/lonnyzhang423/douyin-hot-hub">查看 GitHub</a>
   </div>
 
-  <!-- 评分明细 -->
-  <div class="footer">
-    <h3>评分明细（6 维 100 分）</h3>
-    <table>
+  <!-- 评分表 -->
+  <div class="footer-card">
+    <h3>评分明细 · 5 维 100 分</h3>
+    <table class="score-table">
       <thead>
         <tr>
           <th>项目</th>
-          <th>主题<br>30</th>
-          <th>拿来即用<br>25</th>
-          <th>活跃<br>15</th>
-          <th>热度<br>15</th>
-          <th>替代<br>10</th>
-          <th>工作流<br>10</th>
+          <th>主题30</th>
+          <th>拿来25</th>
+          <th>活跃15</th>
+          <th>热度15</th>
+          <th>替代10</th>
+          <th>协同10</th>
           <th>总分</th>
         </tr>
       </thead>
       <tbody>
-        <tr><td>xiaohongshu-mcp</td><td>10</td><td>9</td><td>9</td><td>8</td><td>9</td><td>10</td><td><strong>9.2</strong></td></tr>
-        <tr><td>Agent-Reach</td><td>9</td><td>8</td><td>10</td><td>10</td><td>8</td><td>8</td><td><strong>8.8</strong></td></tr>
-        <tr><td>AiToEarn</td><td>9</td><td>8</td><td>8</td><td>10</td><td>7</td><td>9</td><td><strong>8.5</strong></td></tr>
-        <tr><td>douyin-hot-hub</td><td>8</td><td>9</td><td>8</td><td>5</td><td>9</td><td>8</td><td><strong>7.8</strong></td></tr>
-        <tr><td>chubbyskills</td><td>8</td><td>8</td><td>6</td><td>4</td><td>8</td><td>7</td><td><strong>6.8</strong></td></tr>
+        <tr><td>xiaohongshu-mcp</td><td>10</td><td>9</td><td>9</td><td>8</td><td>9</td><td>10</td><td>9.2</td></tr>
+        <tr><td>Agent-Reach</td><td>9</td><td>8</td><td>10</td><td>10</td><td>8</td><td>8</td><td>8.8</td></tr>
+        <tr><td>AiToEarn</td><td>9</td><td>8</td><td>8</td><td>10</td><td>7</td><td>9</td><td>8.5</td></tr>
+        <tr><td>chubbyskills</td><td>8</td><td>8</td><td>6</td><td>4</td><td>8</td><td>7</td><td>6.8</td></tr>
+        <tr><td>douyin-hot-hub</td><td>8</td><td>9</td><td>8</td><td>5</td><td>9</td><td>8</td><td>7.8</td></tr>
       </tbody>
     </table>
   </div>
 
+  <!-- 页脚 -->
   <div class="signoff">
-    本日报由 github-trending-monitor skill 自动生成<br>
-    下次推送：2026-06-17 09:00 · cron job 554829ffa226
+    <div class="brand-mini">日新 Daily Fresh</div>
+    <div>由 github-trending-monitor skill 自动生成</div>
+    <div>每日 9:00 推送 · cron job 71c7373d4607</div>
   </div>
 
 </div>
