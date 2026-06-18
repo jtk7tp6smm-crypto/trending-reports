@@ -1,0 +1,639 @@
+<!--
+  ⭐ v3 终态模板（2026-06-16）
+  ============================
+  必含元素（cron 必须复用，不要重新发明）：
+  - 品牌名「日新 Daily Fresh」（不是"GitHub 直播电商 Trending"）
+  - 紫色主色 #6e40c9 + 金黄必看 #f59e0b
+  - 必看卡（编号 01，信息量最大）：含完整 4 条应用技巧 + 推荐理由 + 风险
+  - 数量约定：5 = 1 必看（must 卡） + 4 普通（card 卡），必看算 1 个总数，不是顶部 banner
+  - 6 维评分表（主题30+拿来25+活跃15+热度15+替代10+协同10 = 100 分）
+  - 
+  <div class="card">
+    <div style="display: flex; align-items: center; gap: 4px;">
+      <span class="card-rank">02</span>
+      <h2><a href="https://github.com/qiutongxue/oba-live-tool">qiutongxue/oba-live-tool</a></h2>
+    </div>
+    <div class="stats">
+      <span class="stars">⭐ 1,492</span>
+      <span>· TypeScript</span>
+      <span class="dir">D1 直播电商</span>
+    </div>
+    <div class="what">
+      <strong>是什么：</strong>直播带货工具合集，支持抖音小店、巨量百应、抖音团购、小红书、视频号、快手小店、淘宝——多平台订单/商品/数据统一管理，Electron 桌面应用。
+    </div>
+    <div class="section">
+      <div class="section-label">应用技巧 · 4 条</div>
+      <div class="tips-box">
+        <ol>
+          <li><strong>工作流协同：</strong>工作流协同：把巨量百应、抖店、千川、蝉妈妈数据拉到一个界面，对比跨平台 ROI</li>
+          <li><strong>立即可做：</strong>立即可做：下载 release 安装包，扫码登录抖店账号，先跑通「订单批量导出 Excel」看是否符合你的工作流</li>
+          <li><strong>真实案例：</strong>真实案例：开源项目 README 标注支持「商品一键搬运」，适合多店矩阵运营</li>
+          <li><strong>vs 现在用法：</strong>vs 现在用法：现在用抖店后台 + 蝉妈妈网页 + Excel 三段式切来切去，这个工具合并到一个桌面端</li>
+        </ol>
+      </div>
+    </div>
+    <div class="why"><strong>推荐理由：</strong>刘帅工作日核心战场就是抖音直播带货 + 多平台同步，1.5k star 适中（不是大平台的复杂度），功能高度匹配实操流程。</div>
+    <div class="risk"><strong>风险：</strong>依赖各平台网页版接口，平台改版可能失效；Electron 桌面应用需本地安装；多账号登录有平台风控</div>
+    <a class="link-btn" href="https://github.com/qiutongxue/oba-live-tool">查看 GitHub 仓库</a>
+  </div>
+  <div class="card">
+    <div style="display: flex; align-items: center; gap: 4px;">
+      <span class="card-rank">03</span>
+      <h2><a href="https://github.com/wshobson/agents">wshobson/agents</a></h2>
+    </div>
+    <div class="stats">
+      <span class="stars">⭐ 36,892</span>
+      <span>· Python</span>
+      <span class="dir">D3 AI Agent</span>
+    </div>
+    <div class="what">
+      <strong>是什么：</strong>多 harness Agent plugin marketplace——为 Claude Code、Codex、Gemini CLI、GitHub Copilot 等 8+ Agent 框架提供可复用的 plugin/skill 集合，覆盖开发、运维、安全、文档全场景。
+    </div>
+    <div class="section">
+      <div class="section-label">应用技巧 · 4 条</div>
+      <div class="tips-box">
+        <ol>
+          <li><strong>工作流协同：</strong>工作流协同：把里面的「subagent orchestrator」「context management」plugin 移植到 Hermes 的 skill 体系，做复合 Agent 流水线</li>
+          <li><strong>立即可做：</strong>立即可做：直接 clone 看 marketplace 结构，挑选 3-5 个与直播电商相关的 skill（如「数据 ETL agent」「报告生成 agent」）做参照</li>
+          <li><strong>真实案例：</strong>真实案例：README 列出 50+ plugin 被多个商业 Agent 平台采用</li>
+          <li><strong>vs 现在用法：</strong>vs 现在用法：自己一个一个写 skill 耗时且容易重复，marketplace 模式让你直接挑现成的、按需定制</li>
+        </ol>
+      </div>
+    </div>
+    <div class="why"><strong>推荐理由：</strong>刘帅是 Hermes 重度用户，这正好是 Agent skill 的「应用商店」——37k star + 多 harness 兼容（不绑定单一生态），能直接补充 Hermes skill 库。</div>
+    <div class="risk"><strong>风险：</strong>plugin 质量参差（marketplace 模式通病），需要按热度/作者筛选；多 harness 适配可能滞后于新版本</div>
+    <a class="link-btn" href="https://github.com/wshobson/agents">查看 GitHub 仓库</a>
+  </div>
+  <div class="card">
+    <div style="display: flex; align-items: center; gap: 4px;">
+      <span class="card-rank">04</span>
+      <h2><a href="https://github.com/Amazinghorseli/RedNote-Insight">Amazinghorseli/RedNote-Insight</a></h2>
+    </div>
+    <div class="stats">
+      <span class="stars">⭐ 75</span>
+      <span>· Python</span>
+      <span class="dir">D4 副业（珠事皆宜小红书）</span>
+    </div>
+    <div class="what">
+      <strong>是什么：</strong>小红书爆款雷达——抓指定账号的评论区，用 LLM 挖出用户痛点和高频关键词，定下一个爆款选题方向。Streamlit 界面，LangChain + LangGraph 实现。
+    </div>
+    <div class="section">
+      <div class="section-label">应用技巧 · 4 条</div>
+      <div class="tips-box">
+        <ol>
+          <li><strong>工作流协同：</strong>工作流协同：把珠事皆宜对标的 5-10 个爆款账号评论拉下来，让 LLM 总结「用户最在意的 3 个点」，下次笔记直接戳痛点</li>
+          <li><strong>立即可做：</strong>立即可做：clone 下来，配 OpenAI/Anthropic API key，输入「合香珠」「新中式手串」相关账号，跑一次看效果</li>
+          <li><strong>真实案例：</strong>真实案例：README 里写明用途是「翻评论、找痛点、定方向」</li>
+          <li><strong>vs 现在用法：</strong>vs 现在用法：现在手动翻 100 条评论找灵感，这个工具 5 分钟跑完一个账号的全部评论 + 总结</li>
+        </ol>
+      </div>
+    </div>
+    <div class="why"><strong>推荐理由：</strong>副业「珠事皆宜」最缺的就是爆款选题方向，这个工具直接解决「评论区挖痛点」的核心痛点，主题完全匹配。</div>
+    <div class="risk"><strong>风险：</strong>star 只有 75（项目新/小），作者活跃度需观察；依赖小红书爬虫（X-s 签名会失效）；LLM 调用有 API 成本</div>
+    <a class="link-btn" href="https://github.com/Amazinghorseli/RedNote-Insight">查看 GitHub 仓库</a>
+  </div>
+  <div class="card">
+    <div style="display: flex; align-items: center; gap: 4px;">
+      <span class="card-rank">05</span>
+      <h2><a href="https://github.com/sxyazi/yazi">sxyazi/yazi</a></h2>
+    </div>
+    <div class="stats">
+      <span class="stars">⭐ 39,504</span>
+      <span>· Rust</span>
+      <span class="dir">D6 个人效率</span>
+    </div>
+    <div class="what">
+      <strong>是什么：</strong>Rust 写的闪电级终端文件管理器——异步 I/O + 实时预览（图片/PDF/视频缩略图）+ Vim 风格键位，处理大量文件比 `ls`/`cd` 快几十倍。
+    </div>
+    <div class="section">
+      <div class="section-label">应用技巧 · 4 条</div>
+      <div class="tips-box">
+        <ol>
+          <li><strong>工作流协同：</strong>工作流协同：直播复盘视频/截图/数据文件全在本地一个目录，用 yazi 按时间排序 + 预览图快速翻找</li>
+          <li><strong>立即可做：</strong>立即可做：`brew install yazi`（macOS）/ `cargo install yazi`（其他），输入 `yazi` 启动，cd 到工作目录试试</li>
+          <li><strong>真实案例：</strong>真实案例：39.5k star，Reddit r/commandline 长期热门推荐</li>
+          <li><strong>vs 现在用法：</strong>vs 现在用法：Finder/Explorer 浏览文件慢且不能预览视频帧，yazi 在终端里直接看缩略图、按 j/k 翻页</li>
+        </ol>
+      </div>
+    </div>
+    <div class="why"><strong>推荐理由：</strong>刘帅日常处理大量直播视频/截图/Excel 文件，yazi 在终端里比图形文件管理器更高效，且能与 Hermes 脚本无缝衔接。</div>
+    <div class="risk"><strong>风险：</strong>需要习惯 Vim 风格键位（有学习曲线）；macOS 终端默认配色可能不够亮（可配 iTerm2）；纯终端工具，团队协作时不便截图分享</div>
+    <a class="link-btn" href="https://github.com/sxyazi/yazi">查看 GitHub 仓库</a>
+  </div> 渲染 4 张普通卡（编号 02-05），不要渲染 5 张
+  - "苟日新，日日新，又日新。" —— 《礼记·大学》 占位符（每日金句，hero 区引用）
+
+  违规示例（2026-06-17 cron 犯过错，已纠正）：
+  - ❌ 标题用"GitHub 直播电商 Trending" → 应是「日新 Daily Fresh」
+  - ❌ 必看 banner 简化（只有项目名+描述+立即可做） → 必看必须更丰富，含 4 条应用技巧
+  - ❌ 普通卡 5 张 + 顶部必看 banner = 6 个项目 → 应是 1 必看 + 4 普通 = 5 个总数
+  - ❌ 评分表用旧 7 维（30+20+10+15+15+10） → 应是 6 维（30+25+15+15+10+10）
+
+  参考：SKILL.md §核心经验 #8（v3 终态硬规则）+ references/report-design.md
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>日新 Daily Fresh · 2026-06-18</title>
+<style>
+  /* 系统内置字体（macOS / Windows / 通用），禁止外部资源 */
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB",
+                 "Microsoft YaHei", -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #fafbfc;
+    color: #1f2328;
+    line-height: 1.7;
+    padding: 32px 0;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+
+  /* ========== Hero（紫色渐变品牌区）========== */
+  .hero {
+    background: linear-gradient(135deg, #6e40c9 0%, #4f2da8 100%);
+    color: #fff;
+    border-radius: 18px;
+    padding: 32px 32px 28px;
+    margin-bottom: 24px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 28px rgba(110,64,201,0.22);
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: -40%; right: -10%;
+    width: 220px; height: 220px;
+    background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .hero-top {
+    display: flex; justify-content: space-between; align-items: baseline;
+    position: relative; z-index: 1;
+  }
+  .brand { display: flex; align-items: baseline; gap: 10px; }
+  .brand-cn {
+    font-size: 38px; font-weight: 800; letter-spacing: 2px;
+    background: linear-gradient(90deg, #fff 0%, #ffe8a3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .brand-en { font-size: 14px; opacity: 0.75; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; }
+  .date {
+    font-size: 13px; opacity: 0.85;
+    background: rgba(255,255,255,0.15);
+    padding: 5px 12px; border-radius: 14px;
+  }
+  .hero-sub {
+    margin-top: 8px; font-size: 15px; opacity: 0.9; font-weight: 500;
+    position: relative; z-index: 1;
+  }
+  .hero-stats {
+    display: flex; gap: 18px; margin-top: 22px;
+    position: relative; z-index: 1;
+  }
+  .stat { display: flex; flex-direction: column; gap: 2px; }
+  .stat-num { font-size: 22px; font-weight: 700; line-height: 1; }
+  .stat-label { font-size: 11px; opacity: 0.75; text-transform: uppercase; letter-spacing: 0.8px; }
+  .quote {
+    margin-top: 20px; padding: 12px 16px;
+    background: rgba(255,255,255,0.12);
+    border-radius: 10px;
+    font-size: 13.5px; font-style: italic; opacity: 0.92;
+    border-left: 3px solid #ffe8a3;
+    position: relative; z-index: 1;
+  }
+
+  /* ========== 必看卡（金黄高亮，信息量最大）========== */
+  .must {
+    background: linear-gradient(135deg, #fff8c5 0%, #ffe8a3 100%);
+    border: 2px solid #f59e0b;
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 16px rgba(245,158,11,0.15);
+  }
+  .must-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #f59e0b; color: #fff;
+    font-size: 12px; font-weight: 700; padding: 4px 12px;
+    border-radius: 14px; margin-bottom: 12px;
+  }
+  .must-badge::before { content: "★"; font-size: 13px; }
+  .must h2 {
+    font-size: 24px; font-weight: 800; margin-bottom: 4px;
+    color: #1f2328; letter-spacing: 0.3px;
+  }
+  .must h2 a { color: inherit; text-decoration: none; }
+  .must .stats {
+    display: flex; gap: 12px; flex-wrap: wrap;
+    font-size: 13px; color: #672021; margin-bottom: 16px;
+  }
+  .must .stars { font-weight: 700; }
+  .must .what {
+    font-size: 15.5px; color: #1f2328;
+    margin-bottom: 18px; line-height: 1.6;
+    padding: 12px 16px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 8px;
+  }
+  .must .what strong { color: #b45309; }
+  .must .tips {
+    background: rgba(255,255,255,0.55);
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-bottom: 14px;
+  }
+  .must .tips-title {
+    font-size: 12px; font-weight: 700; color: #b45309;
+    text-transform: uppercase; letter-spacing: 0.8px;
+    margin-bottom: 10px;
+  }
+  .must .tips ol { padding-left: 20px; }
+  .must .tips li {
+    font-size: 14.5px; margin-bottom: 8px; color: #1f2328; line-height: 1.6;
+  }
+  .must .tips li:last-child { margin-bottom: 0; }
+  .must .tips li strong { color: #b45309; font-weight: 600; }
+  .must .why {
+    font-size: 14px; color: #672021;
+    padding: 10px 14px;
+    background: rgba(255,255,255,0.4);
+    border-left: 3px solid #b45309;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  .must .risk {
+    font-size: 13px; color: #672021;
+    padding: 8px 12px;
+    background: rgba(207,34,46,0.08);
+    border-left: 3px solid #cf222e;
+    border-radius: 4px;
+  }
+  .must .risk strong { color: #cf222e; }
+  .must .link-btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    margin-top: 14px;
+    background: #b45309; color: #fff !important;
+    text-decoration: none; padding: 9px 18px;
+    border-radius: 8px; font-size: 13px; font-weight: 600;
+  }
+
+  /* ========== 普通卡（编号 02-05）========== */
+  .card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 22px 26px;
+    margin-bottom: 14px;
+    box-shadow: 0 1px 3px rgba(31,35,40,0.05), 0 4px 12px rgba(31,35,40,0.04);
+    border: 1px solid #eaeef2;
+  }
+  .card-rank {
+    display: inline-flex; align-items: center; justify-content: center;
+    background: #6e40c9; color: #fff;
+    font-weight: 700; font-size: 11px; padding: 3px 8px;
+    border-radius: 5px; min-width: 28px; text-align: center;
+  }
+  .card h2 {
+    font-size: 19px; font-weight: 700; display: inline; margin-left: 8px;
+  }
+  .card h2 a { color: #1f2328; text-decoration: none; }
+  .card .stats {
+    margin-top: 6px; margin-bottom: 14px;
+    font-size: 13px; color: #57606a;
+    display: flex; gap: 10px; flex-wrap: wrap; align-items: center;
+  }
+  .card .stars { color: #f59e0b; font-weight: 600; }
+  .card .lang { color: #6e40c9; font-weight: 500; }
+  .card .dir {
+    color: #fff; background: #1a7f37;
+    font-size: 11px; font-weight: 500; padding: 2px 8px;
+    border-radius: 4px;
+  }
+  .card .what {
+    font-size: 14.5px; color: #1f2328;
+    padding: 10px 14px; background: #f6f8fa;
+    border-radius: 8px; margin-bottom: 12px; line-height: 1.6;
+  }
+  .section { margin-top: 12px; }
+  .section-label {
+    font-size: 11px; font-weight: 700; color: #6e40c9;
+    text-transform: uppercase; letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  .tips-box {
+    background: linear-gradient(135deg, #f7f3ff 0%, #ede4ff 100%);
+    border-radius: 8px;
+    padding: 12px 16px;
+  }
+  .tips-box ol { padding-left: 18px; }
+  .tips-box li {
+    font-size: 14px; margin-bottom: 6px; color: #1f2328; line-height: 1.55;
+  }
+  .tips-box li:last-child { margin-bottom: 0; }
+  .tips-box li strong { color: #6e40c9; font-weight: 600; }
+  .card .why {
+    font-size: 13.5px; color: #57606a;
+    margin-top: 10px; line-height: 1.55;
+  }
+  .card .why strong { color: #1f2328; }
+  .card .risk {
+    font-size: 13px; color: #672021;
+    margin-top: 8px; padding: 7px 12px;
+    background: #fff4f4; border-left: 3px solid #cf222e;
+    border-radius: 4px;
+  }
+  .card .risk strong { color: #cf222e; }
+  .card .link-btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    margin-top: 12px;
+    background: #6e40c9; color: #fff !important;
+    text-decoration: none; padding: 7px 14px;
+    border-radius: 6px; font-size: 12.5px; font-weight: 500;
+  }
+  .card .link-btn::after { content: " →"; }
+
+  /* ========== 评分表（5 维 100 分）========== */
+  .footer-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin-top: 24px;
+    box-shadow: 0 1px 3px rgba(31,35,40,0.05);
+    border: 1px solid #eaeef2;
+  }
+  .footer-card h3 {
+    font-size: 14px; font-weight: 700; color: #6e40c9;
+    text-transform: uppercase; letter-spacing: 1px;
+    margin-bottom: 12px;
+  }
+  .score-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .score-table th, .score-table td {
+    text-align: left; padding: 8px 6px; border-bottom: 1px solid #eaeef2;
+  }
+  .score-table th {
+    font-weight: 600; color: #57606a; background: #f6f8fa; font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  .score-table td:first-child { font-weight: 600; }
+  .score-table td:last-child { color: #6e40c9; font-weight: 700; font-size: 15px; }
+
+  /* ========== 页脚 ========== */
+  .signoff {
+    text-align: center;
+    color: #8b949e;
+    font-size: 12px;
+    margin-top: 24px;
+    padding: 20px 16px;
+  }
+  .signoff .brand-mini {
+    font-size: 14px; font-weight: 700; color: #6e40c9;
+    margin-bottom: 4px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-top">
+      <div class="brand">
+        <div class="brand-cn">日新</div>
+        <div class="brand-en">Daily Fresh</div>
+      </div>
+      <div class="date">2026-06-18 · 周周四</div>
+    </div>
+    <div class="hero-sub">GitHub 直播电商好物日报 · 每日 9:00 推送</div>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-num">215</div><div class="stat-label">候选</div></div>
+      <div class="stat"><div class="stat-num">5</div><div class="stat-label">入选</div></div>
+      <div class="stat"><div class="stat-num">3+1+1</div><div class="stat-label">主业+副业+中性</div></div>
+    </div>
+    <div class="quote">"苟日新，日日新，又日新。" —— 《礼记·大学》</div>
+  </div>
+
+  <!-- 必看卡（编号 01，信息量最大） -->
+  <div class="must">
+    <div class="must-badge">今日必看</div>
+    <h2><a href="https://github.com/xpzouying/xiaohongshu-mcp">xpzouying/xiaohongshu-mcp</a></h2>
+    <div class="stats">
+      <span class="stars">⭐ 14,231</span>
+      <span>· Go</span>
+      <span>· D2 小红书 + D4 副业</span>
+    </div>
+    <div class="what">
+      <strong>是什么：</strong>用 MCP（Model Context Protocol）把小红书开放为 Agent 可调用的工具集，让 Claude/Cursor 等 AI 直接操控小红书——读笔记、搜爆款、抓评论、发内容，一行 JSON-RPC 即可。
+    </div>
+    <div class="tips">
+      <div class="tips-title">应用技巧 · 4 条</div>
+      <ol>
+        <li><strong>工作流协同：</strong>工作流协同：在 Hermes 配置 MCP 客户端，让 AI 直接拉你关注达人的最新笔记、扒同类目爆款结构、做选题参考</li>
+        <li><strong>立即可做：</strong>立即可做：复制仓库 README 里的 Claude Desktop 配置（3 行 JSON），小红书扫码登录，AI 就能读你账号下的笔记</li>
+        <li><strong>真实案例：</strong>真实案例：开源 MCP 生态里小红书是使用最频繁的国内平台之一，多个 AI Agent 框架默认集成它做「评论区抓取 + LLM 总结」</li>
+        <li><strong>vs 现在用法：</strong>vs 现在用法：以前要手写小红书 cookie 爬虫 + X-s 签名逆向（每两周失效一次），现在 MCP 客户端直接对话调用，开发者只关心 prompt</li>
+      </ol>
+    </div>
+    <div class="why"><strong>推荐理由：</strong>MCP 是 2026 年最热的 Agent 范式，小红书又是刘帅主业（七修-杏林有方）和副业（珠事皆宜）共用战场，二者结合省去自写爬虫的全部脏活。Go 写的小而快，14.2k star 验证了社区需求。</div>
+    <div class="risk"><strong>风险：</strong>依赖小红书网页版 cookie 和 X-s 签名，平台改版会失效；高频调用有风控风险（建议每天 <500 次）；发布内容需谨慎，平台对自动化发布零容忍</div>
+    <a class="link-btn" href="https://github.com/xpzouying/xiaohongshu-mcp">查看 GitHub 仓库</a>
+  </div>
+
+  <!-- 普通卡 02-05 -->
+  
+  <div class="card">
+    <div style="display: flex; align-items: center; gap: 4px;">
+      <span class="card-rank">02</span>
+      <h2><a href="https://github.com/qiutongxue/oba-live-tool">qiutongxue/oba-live-tool</a></h2>
+    </div>
+    <div class="stats">
+      <span class="stars">⭐ 1,492</span>
+      <span>· TypeScript</span>
+      <span class="dir">D1 直播电商</span>
+    </div>
+    <div class="what">
+      <strong>是什么：</strong>直播带货工具合集，支持抖音小店、巨量百应、抖音团购、小红书、视频号、快手小店、淘宝——多平台订单/商品/数据统一管理，Electron 桌面应用。
+    </div>
+    <div class="section">
+      <div class="section-label">应用技巧 · 4 条</div>
+      <div class="tips-box">
+        <ol>
+          <li><strong>工作流协同：</strong>工作流协同：把巨量百应、抖店、千川、蝉妈妈数据拉到一个界面，对比跨平台 ROI</li>
+          <li><strong>立即可做：</strong>立即可做：下载 release 安装包，扫码登录抖店账号，先跑通「订单批量导出 Excel」看是否符合你的工作流</li>
+          <li><strong>真实案例：</strong>真实案例：开源项目 README 标注支持「商品一键搬运」，适合多店矩阵运营</li>
+          <li><strong>vs 现在用法：</strong>vs 现在用法：现在用抖店后台 + 蝉妈妈网页 + Excel 三段式切来切去，这个工具合并到一个桌面端</li>
+        </ol>
+      </div>
+    </div>
+    <div class="why"><strong>推荐理由：</strong>刘帅工作日核心战场就是抖音直播带货 + 多平台同步，1.5k star 适中（不是大平台的复杂度），功能高度匹配实操流程。</div>
+    <div class="risk"><strong>风险：</strong>依赖各平台网页版接口，平台改版可能失效；Electron 桌面应用需本地安装；多账号登录有平台风控</div>
+    <a class="link-btn" href="https://github.com/qiutongxue/oba-live-tool">查看 GitHub 仓库</a>
+  </div>
+  <div class="card">
+    <div style="display: flex; align-items: center; gap: 4px;">
+      <span class="card-rank">03</span>
+      <h2><a href="https://github.com/wshobson/agents">wshobson/agents</a></h2>
+    </div>
+    <div class="stats">
+      <span class="stars">⭐ 36,892</span>
+      <span>· Python</span>
+      <span class="dir">D3 AI Agent</span>
+    </div>
+    <div class="what">
+      <strong>是什么：</strong>多 harness Agent plugin marketplace——为 Claude Code、Codex、Gemini CLI、GitHub Copilot 等 8+ Agent 框架提供可复用的 plugin/skill 集合，覆盖开发、运维、安全、文档全场景。
+    </div>
+    <div class="section">
+      <div class="section-label">应用技巧 · 4 条</div>
+      <div class="tips-box">
+        <ol>
+          <li><strong>工作流协同：</strong>工作流协同：把里面的「subagent orchestrator」「context management」plugin 移植到 Hermes 的 skill 体系，做复合 Agent 流水线</li>
+          <li><strong>立即可做：</strong>立即可做：直接 clone 看 marketplace 结构，挑选 3-5 个与直播电商相关的 skill（如「数据 ETL agent」「报告生成 agent」）做参照</li>
+          <li><strong>真实案例：</strong>真实案例：README 列出 50+ plugin 被多个商业 Agent 平台采用</li>
+          <li><strong>vs 现在用法：</strong>vs 现在用法：自己一个一个写 skill 耗时且容易重复，marketplace 模式让你直接挑现成的、按需定制</li>
+        </ol>
+      </div>
+    </div>
+    <div class="why"><strong>推荐理由：</strong>刘帅是 Hermes 重度用户，这正好是 Agent skill 的「应用商店」——37k star + 多 harness 兼容（不绑定单一生态），能直接补充 Hermes skill 库。</div>
+    <div class="risk"><strong>风险：</strong>plugin 质量参差（marketplace 模式通病），需要按热度/作者筛选；多 harness 适配可能滞后于新版本</div>
+    <a class="link-btn" href="https://github.com/wshobson/agents">查看 GitHub 仓库</a>
+  </div>
+  <div class="card">
+    <div style="display: flex; align-items: center; gap: 4px;">
+      <span class="card-rank">04</span>
+      <h2><a href="https://github.com/Amazinghorseli/RedNote-Insight">Amazinghorseli/RedNote-Insight</a></h2>
+    </div>
+    <div class="stats">
+      <span class="stars">⭐ 75</span>
+      <span>· Python</span>
+      <span class="dir">D4 副业（珠事皆宜小红书）</span>
+    </div>
+    <div class="what">
+      <strong>是什么：</strong>小红书爆款雷达——抓指定账号的评论区，用 LLM 挖出用户痛点和高频关键词，定下一个爆款选题方向。Streamlit 界面，LangChain + LangGraph 实现。
+    </div>
+    <div class="section">
+      <div class="section-label">应用技巧 · 4 条</div>
+      <div class="tips-box">
+        <ol>
+          <li><strong>工作流协同：</strong>工作流协同：把珠事皆宜对标的 5-10 个爆款账号评论拉下来，让 LLM 总结「用户最在意的 3 个点」，下次笔记直接戳痛点</li>
+          <li><strong>立即可做：</strong>立即可做：clone 下来，配 OpenAI/Anthropic API key，输入「合香珠」「新中式手串」相关账号，跑一次看效果</li>
+          <li><strong>真实案例：</strong>真实案例：README 里写明用途是「翻评论、找痛点、定方向」</li>
+          <li><strong>vs 现在用法：</strong>vs 现在用法：现在手动翻 100 条评论找灵感，这个工具 5 分钟跑完一个账号的全部评论 + 总结</li>
+        </ol>
+      </div>
+    </div>
+    <div class="why"><strong>推荐理由：</strong>副业「珠事皆宜」最缺的就是爆款选题方向，这个工具直接解决「评论区挖痛点」的核心痛点，主题完全匹配。</div>
+    <div class="risk"><strong>风险：</strong>star 只有 75（项目新/小），作者活跃度需观察；依赖小红书爬虫（X-s 签名会失效）；LLM 调用有 API 成本</div>
+    <a class="link-btn" href="https://github.com/Amazinghorseli/RedNote-Insight">查看 GitHub 仓库</a>
+  </div>
+  <div class="card">
+    <div style="display: flex; align-items: center; gap: 4px;">
+      <span class="card-rank">05</span>
+      <h2><a href="https://github.com/sxyazi/yazi">sxyazi/yazi</a></h2>
+    </div>
+    <div class="stats">
+      <span class="stars">⭐ 39,504</span>
+      <span>· Rust</span>
+      <span class="dir">D6 个人效率</span>
+    </div>
+    <div class="what">
+      <strong>是什么：</strong>Rust 写的闪电级终端文件管理器——异步 I/O + 实时预览（图片/PDF/视频缩略图）+ Vim 风格键位，处理大量文件比 `ls`/`cd` 快几十倍。
+    </div>
+    <div class="section">
+      <div class="section-label">应用技巧 · 4 条</div>
+      <div class="tips-box">
+        <ol>
+          <li><strong>工作流协同：</strong>工作流协同：直播复盘视频/截图/数据文件全在本地一个目录，用 yazi 按时间排序 + 预览图快速翻找</li>
+          <li><strong>立即可做：</strong>立即可做：`brew install yazi`（macOS）/ `cargo install yazi`（其他），输入 `yazi` 启动，cd 到工作目录试试</li>
+          <li><strong>真实案例：</strong>真实案例：39.5k star，Reddit r/commandline 长期热门推荐</li>
+          <li><strong>vs 现在用法：</strong>vs 现在用法：Finder/Explorer 浏览文件慢且不能预览视频帧，yazi 在终端里直接看缩略图、按 j/k 翻页</li>
+        </ol>
+      </div>
+    </div>
+    <div class="why"><strong>推荐理由：</strong>刘帅日常处理大量直播视频/截图/Excel 文件，yazi 在终端里比图形文件管理器更高效，且能与 Hermes 脚本无缝衔接。</div>
+    <div class="risk"><strong>风险：</strong>需要习惯 Vim 风格键位（有学习曲线）；macOS 终端默认配色可能不够亮（可配 iTerm2）；纯终端工具，团队协作时不便截图分享</div>
+    <a class="link-btn" href="https://github.com/sxyazi/yazi">查看 GitHub 仓库</a>
+  </div>
+
+  <!-- 评分表（5 维 100 分） -->
+  <div class="footer-card">
+    <h3>评分明细 · 5 维 100 分</h3>
+    <table class="score-table">
+      <thead>
+        <tr>
+          <th>项目</th>
+          <th>主题30</th>
+          <th>拿来25</th>
+          <th>活跃15</th>
+          <th>热度15</th>
+          <th>替代10</th>
+          <th>协同10</th>
+          <th>总分</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>01 xiaohongshu-mcp</td>
+          <td>9</td>
+          <td>8</td>
+          <td>10</td>
+          <td>7</td>
+          <td>9</td>
+          <td>10</td>
+          <td>91.5</td>
+        </tr>
+        <tr>
+          <td>02 oba-live-tool</td>
+          <td>10</td>
+          <td>7</td>
+          <td>10</td>
+          <td>4</td>
+          <td>8</td>
+          <td>10</td>
+          <td>86.5</td>
+        </tr>
+        <tr>
+          <td>03 agents</td>
+          <td>9</td>
+          <td>7</td>
+          <td>10</td>
+          <td>8</td>
+          <td>8</td>
+          <td>9</td>
+          <td>88.5</td>
+        </tr>
+        <tr>
+          <td>04 RedNote-Insight</td>
+          <td>10</td>
+          <td>6</td>
+          <td>9</td>
+          <td>1</td>
+          <td>9</td>
+          <td>7</td>
+          <td>76.0</td>
+        </tr>
+        <tr>
+          <td>05 yazi</td>
+          <td>6</td>
+          <td>8</td>
+          <td>8</td>
+          <td>8</td>
+          <td>7</td>
+          <td>7</td>
+          <td>76.0</td>
+        </tr></tbody>
+    </table>
+  </div>
+
+  <!-- 页脚 -->
+  <div class="signoff">
+    <div class="brand-mini">日新 Daily Fresh</div>
+    <div>由 github-trending-monitor skill 自动生成</div>
+    <div>每日 9:00 推送 · cron job github-trending-monitor/daily-9am</div>
+  </div>
+
+</div>
+</body>
+</html>
