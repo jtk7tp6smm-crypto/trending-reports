@@ -1,0 +1,577 @@
+<!--
+  ⭐ v3 终态模板（2026-06-16）
+  ============================
+  必含元素（cron 必须复用，不要重新发明）：
+  - 品牌名「日新 Daily Fresh」（不是"GitHub 直播电商 Trending"）
+  - 紫色主色 #6e40c9 + 金黄必看 #f59e0b
+  - 必看卡（编号 01，信息量最大）：含完整 4 条应用技巧 + 推荐理由 + 风险
+  - 数量约定：5 = 1 必看（must 卡） + 4 普通（card 卡），必看算 1 个总数，不是顶部 banner
+  - 6 维评分表（主题30+拿来25+活跃15+热度15+替代10+协同10 = 105 分，「拿来即用」含 5% 额外加权）
+  - 
+  <div class="card">
+    <span class="card-rank">[02]</span>
+    <h2><a href="https://github.com/dososo/blcaptain-style-skill">dososo/blcaptain-style-skill</a></h2>
+    <div class="stats">
+      <span class="stars">⭐ 78</span>
+      <span class="lang">JavaScript</span>
+      <span class="dir">小红书/抖音内容</span>
+    </div>
+    <div class="what">
+      <strong>是什么：</strong>中文图文卡片生成 Skill：把一段文字内容转换为海报级图文组图，预设小红书 3:4 / 公众号封面比例，1 引擎 + 3 视觉语言（静纸 Still Paper / 实证 Empiric / 报道 Reportage），可在 Claude Code / Codex 等 agent 中调用。
+    </div>
+    <div class="section">
+      <div class="section-label">应用技巧 · 4 条</div>
+      <div class="tips-box">
+        <ol>
+          <li><strong>工作流协同：</strong>在 Hermes 装这个 Skill，苗苗/赵洪爽写完笔记文案后一句话生成小红书 3:4 海报 + 公众号封面，省去 Canva/创客贴操作</li>
+          <li><strong>立即可做：</strong>把七修-杏林有方最近一篇爆款养生笔记文案丢进去，生成 3 种视觉风格对比，挑一款定版</li>
+          <li><strong>真实案例：</strong>topics 列出 agent-skill / claude-skill / codex-skill——已为 Claude Code 和 Codex 适配，可在 Hermes 中直接调用</li>
+          <li><strong>vs 现在用法：</strong>以前开 Canva 选模板排版一张 3:4 卡片要 15-20 分钟，现在 Skill 一次跑完出 3 套方案</li>
+        </ol>
+      </div>
+    </div>
+    <div class="why"><strong>推荐理由：</strong>小红书 7:修-杏林有方主战场日更 1-3 篇，卡片生成是高频环节；agent skill 形态可批量调用</div>
+    <div class="risk"><strong>风险：</strong>78 star 社区验证少，先做 1-2 篇测试看 AI 生成的图能否达到手动 Canva 质量再规模化；视觉语言以中文审美为主，国际化场景弱</div>
+    <a class="link-btn" href="https://github.com/dososo/blcaptain-style-skill">查看 GitHub</a>
+  </div>
+  <div class="card">
+    <span class="card-rank">[03]</span>
+    <h2><a href="https://github.com/bytedance/UI-TARS-desktop">bytedance/UI-TARS-desktop</a></h2>
+    <div class="stats">
+      <span class="stars">⭐ 36,858</span>
+      <span class="lang">TypeScript</span>
+      <span class="dir">AI Agent</span>
+    </div>
+    <div class="what">
+      <strong>是什么：</strong>字节开源的多模态 AI Agent Stack：UI-TARS-desktop 把前沿多模态模型（视觉 + 推理 + 操作）打包为桌面 Agent，支持 browser-use / computer-use / cowork 三种工作模式，可控制浏览器/桌面完成复杂任务。
+    </div>
+    <div class="section">
+      <div class="section-label">应用技巧 · 4 条</div>
+      <div class="tips-box">
+        <ol>
+          <li><strong>工作流协同：</strong>Hermes 工作流里多一个『看屏幕 + 操作 GUI』的能力——比如让它自己点开蝉妈妈/千瓜抓数据、补 Hermes 没有的 GUI 操作场景</li>
+          <li><strong>立即可做：</strong>下载桌面 App（macOS/Windows/Linux），先跑 demo 模式让它打开一个网页+截图，看多模态识屏效果</li>
+          <li><strong>真实案例：</strong>topics 列出 agent / agent-tars / browser-use / computer-use / cowork——字节对『GUI Agent』的官方布局</li>
+          <li><strong>vs 现在用法：</strong>以前要写 Playwright 脚本控制浏览器，现在让 UI-TARS 看屏幕说『打开抖店后台、点订单管理、导出 Excel』</li>
+        </ol>
+      </div>
+    </div>
+    <div class="why"><strong>推荐理由：</strong>字节官方开源 + 36.8k star 是今天 D3 池最热；GUI Agent 是 2026 年 AI 应用最热方向之一（OpenAI Operator / Anthropic Computer Use 都是同方向）</div>
+    <div class="risk"><strong>风险：</strong>36.8k star 属『大平台边缘』，建议先看 demo 不动手——桌面 App 部署重；GUI Agent 操作稳定性还在演进，关键任务（如付款）不要让 Agent 直接执行</div>
+    <a class="link-btn" href="https://github.com/bytedance/UI-TARS-desktop">查看 GitHub</a>
+  </div>
+  <div class="card">
+    <span class="card-rank">[04]</span>
+    <h2><a href="https://github.com/sales-skills/sales">sales-skills/sales</a></h2>
+    <div class="stats">
+      <span class="stars">⭐ 53</span>
+      <span class="lang">Python</span>
+      <span class="dir">副业小红书</span>
+    </div>
+    <div class="what">
+      <strong>是什么：</strong>Claude Code 营销 / 销售 / GTM 场景的 skills 集合：CRM 接入、冷邮件开发、笔记记录、转化智能等 8+ 个场景 skill，可直接在 Claude Code 或 Hermes 中调用。
+    </div>
+    <div class="section">
+      <div class="section-label">应用技巧 · 4 条</div>
+      <div class="tips-box">
+        <ol>
+          <li><strong>工作流协同：</strong>在 Hermes 装这些 skills，让 AI 帮你写珠事皆宜小红书『达人合作 cold email』、做 KOL 报价分析、生成种草话术</li>
+          <li><strong>立即可做：</strong>clone 仓库到 ~/.hermes/skills/sales/，跑『seo-audit』skill 对珠事皆宜小红书主页做一次可见性检查</li>
+          <li><strong>真实案例：</strong>topics 列出 ai-skills / claude / claude-code / cold-email / conversion-intelligence——5 个场景覆盖营销全链路</li>
+          <li><strong>vs 现在用法：</strong>以前手工写达人合作邮件/做小红书种草话术，现在 AI 跑 skill 一键出初稿再人工润色</li>
+        </ol>
+      </div>
+    </div>
+    <div class="why"><strong>推荐理由：</strong>副业珠事皆宜的核心痛点是『写种草内容 + 找达人合作』，这俩 skill 集直接对应；Claude Code 官方生态，可与 Hermes 互通</div>
+    <div class="risk"><strong>风险：</strong>53 star 社区验证极少，先在小范围（1-2 封冷邮件）测试 AI 生成的转化率；cold email 在 2026 年反垃圾邮件规则严，AI 模板可能被识别为批量邮件</div>
+    <a class="link-btn" href="https://github.com/sales-skills/sales">查看 GitHub</a>
+  </div>
+  <div class="card">
+    <span class="card-rank">[05]</span>
+    <h2><a href="https://github.com/comet-ml/opik">comet-ml/opik</a></h2>
+    <div class="stats">
+      <span class="stars">⭐ 19,694</span>
+      <span class="lang">Python</span>
+      <span class="dir">数据协同</span>
+    </div>
+    <div class="what">
+      <strong>是什么：</strong>LLM 应用 debug / 评估 / 监控平台：跟踪 RAG / agent 工作流，trace LLM 调用链，跑 eval 集评估 prompt 效果，对接 LangChain / LlamaIndex / OpenAI / Anthropic 全生态。
+    </div>
+    <div class="section">
+      <div class="section-label">应用技巧 · 4 条</div>
+      <div class="tips-box">
+        <ol>
+          <li><strong>工作流协同：</strong>Hermes / Claude Code 里调 LLM 时挂上 opik，trace 每次调用的 token/延迟/失败率，发现哪类 prompt 最贵</li>
+          <li><strong>立即可做：</strong>pip install opik 后跑 opik configure 接入，wrap 一个常用 prompt 跑一次看 trace 长什么样</li>
+          <li><strong>真实案例：</strong>topics 列出 evaluation / langchain / llama-index——已为 RAG/Agent 主流框架预置集成</li>
+          <li><strong>vs 现在用法：</strong>以前 LLM 调用黑盒——失败不知道为什么贵，现在 opik 给出每步 token/延迟 trace</li>
+        </ol>
+      </div>
+    </div>
+    <div class="why"><strong>推荐理由：</strong>Hermes / Claude Code 是 LLM 重度用户，opik 是评估 LLM 应用最成熟的 OSS 之一；19.7k star + 昨天还在 push，社区活跃</div>
+    <div class="risk"><strong>风险：</strong>OSS 版需要自托管（Docker），云版有免费额度但生产规模要付费；trace 数据含 prompt 敏感信息，自托管注意访问控制</div>
+    <a class="link-btn" href="https://github.com/comet-ml/opik">查看 GitHub</a>
+  </div> 渲染 4 张普通卡（编号 02-05），不要渲染 5 张
+  - 「苟日新，日日新，又日新」——《礼记·大学》 占位符（每日金句，hero 区引用）
+
+  违规示例（2026-06-17 cron 犯过错，已纠正）：
+  - ❌ 标题用"GitHub 直播电商 Trending" → 应是「日新 Daily Fresh」
+  - ❌ 必看 banner 简化（只有项目名+描述+立即可做） → 必看必须更丰富，含 4 条应用技巧
+  - ❌ 普通卡 5 张 + 顶部必看 banner = 6 个项目 → 应是 1 必看 + 4 普通 = 5 个总数
+  - ❌ 评分表用旧 7 维（30+20+10+15+15+10） → 应是 6 维（30+25+15+15+10+10）
+
+  参考：SKILL.md §核心经验 #8（v3 终态硬规则）+ references/report-design.md
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>日新 Daily Fresh · 2026-06-19</title>
+<style>
+  /* 系统内置字体（macOS / Windows / 通用），禁止外部资源 */
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB",
+                 "Microsoft YaHei", -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #fafbfc;
+    color: #1f2328;
+    line-height: 1.7;
+    padding: 32px 0;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+
+  /* ========== Hero（紫色渐变品牌区）========== */
+  .hero {
+    background: linear-gradient(135deg, #6e40c9 0%, #4f2da8 100%);
+    color: #fff;
+    border-radius: 18px;
+    padding: 32px 32px 28px;
+    margin-bottom: 24px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 28px rgba(110,64,201,0.22);
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: -40%; right: -10%;
+    width: 220px; height: 220px;
+    background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .hero-top {
+    display: flex; justify-content: space-between; align-items: baseline;
+    position: relative; z-index: 1;
+  }
+  .brand { display: flex; align-items: baseline; gap: 10px; }
+  .brand-cn {
+    font-size: 38px; font-weight: 800; letter-spacing: 2px;
+    background: linear-gradient(90deg, #fff 0%, #ffe8a3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .brand-en { font-size: 14px; opacity: 0.75; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; }
+  .date {
+    font-size: 13px; opacity: 0.85;
+    background: rgba(255,255,255,0.15);
+    padding: 5px 12px; border-radius: 14px;
+  }
+  .hero-sub {
+    margin-top: 8px; font-size: 15px; opacity: 0.9; font-weight: 500;
+    position: relative; z-index: 1;
+  }
+  .hero-stats {
+    display: flex; gap: 18px; margin-top: 22px;
+    position: relative; z-index: 1;
+  }
+  .stat { display: flex; flex-direction: column; gap: 2px; }
+  .stat-num { font-size: 22px; font-weight: 700; line-height: 1; }
+  .stat-label { font-size: 11px; opacity: 0.75; text-transform: uppercase; letter-spacing: 0.8px; }
+  .quote {
+    margin-top: 20px; padding: 12px 16px;
+    background: rgba(255,255,255,0.12);
+    border-radius: 10px;
+    font-size: 13.5px; font-style: italic; opacity: 0.92;
+    border-left: 3px solid #ffe8a3;
+    position: relative; z-index: 1;
+  }
+
+  /* ========== 必看卡（金黄高亮，信息量最大）========== */
+  .must {
+    background: linear-gradient(135deg, #fff8c5 0%, #ffe8a3 100%);
+    border: 2px solid #f59e0b;
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 16px rgba(245,158,11,0.15);
+  }
+  .must-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #f59e0b; color: #fff;
+    font-size: 12px; font-weight: 700; padding: 4px 12px;
+    border-radius: 14px; margin-bottom: 12px;
+  }
+  .must-badge::before { content: "★"; font-size: 13px; }
+  .must h2 {
+    font-size: 24px; font-weight: 800; margin-bottom: 4px;
+    color: #1f2328; letter-spacing: 0.3px;
+  }
+  .must h2 a { color: inherit; text-decoration: none; }
+  .must .stats {
+    display: flex; gap: 12px; flex-wrap: wrap;
+    font-size: 13px; color: #672021; margin-bottom: 16px;
+  }
+  .must .stars { font-weight: 700; }
+  .must .what {
+    font-size: 15.5px; color: #1f2328;
+    margin-bottom: 18px; line-height: 1.6;
+    padding: 12px 16px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 8px;
+  }
+  .must .what strong { color: #b45309; }
+  .must .tips {
+    background: rgba(255,255,255,0.55);
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-bottom: 14px;
+  }
+  .must .tips-title {
+    font-size: 12px; font-weight: 700; color: #b45309;
+    text-transform: uppercase; letter-spacing: 0.8px;
+    margin-bottom: 10px;
+  }
+  .must .tips ol { padding-left: 20px; }
+  .must .tips li {
+    font-size: 14.5px; margin-bottom: 8px; color: #1f2328; line-height: 1.6;
+  }
+  .must .tips li:last-child { margin-bottom: 0; }
+  .must .tips li strong { color: #b45309; font-weight: 600; }
+  .must .why {
+    font-size: 14px; color: #672021;
+    padding: 10px 14px;
+    background: rgba(255,255,255,0.4);
+    border-left: 3px solid #b45309;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  .must .risk {
+    font-size: 13px; color: #672021;
+    padding: 8px 12px;
+    background: rgba(207,34,46,0.08);
+    border-left: 3px solid #cf222e;
+    border-radius: 4px;
+  }
+  .must .risk strong { color: #cf222e; }
+  .must .link-btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    margin-top: 14px;
+    background: #b45309; color: #fff !important;
+    text-decoration: none; padding: 9px 18px;
+    border-radius: 8px; font-size: 13px; font-weight: 600;
+  }
+
+  /* ========== 普通卡（编号 02-05）========== */
+  .card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 22px 26px;
+    margin-bottom: 14px;
+    box-shadow: 0 1px 3px rgba(31,35,40,0.05), 0 4px 12px rgba(31,35,40,0.04);
+    border: 1px solid #eaeef2;
+  }
+  .card-rank {
+    display: inline-flex; align-items: center; justify-content: center;
+    background: #6e40c9; color: #fff;
+    font-weight: 700; font-size: 11px; padding: 3px 8px;
+    border-radius: 5px; min-width: 28px; text-align: center;
+  }
+  .card h2 {
+    font-size: 19px; font-weight: 700; display: inline; margin-left: 8px;
+  }
+  .card h2 a { color: #1f2328; text-decoration: none; }
+  .card .stats {
+    margin-top: 6px; margin-bottom: 14px;
+    font-size: 13px; color: #57606a;
+    display: flex; gap: 10px; flex-wrap: wrap; align-items: center;
+  }
+  .card .stars { color: #f59e0b; font-weight: 600; }
+  .card .lang { color: #6e40c9; font-weight: 500; }
+  .card .dir {
+    color: #fff; background: #1a7f37;
+    font-size: 11px; font-weight: 500; padding: 2px 8px;
+    border-radius: 4px;
+  }
+  .card .what {
+    font-size: 14.5px; color: #1f2328;
+    padding: 10px 14px; background: #f6f8fa;
+    border-radius: 8px; margin-bottom: 12px; line-height: 1.6;
+  }
+  .section { margin-top: 12px; }
+  .section-label {
+    font-size: 11px; font-weight: 700; color: #6e40c9;
+    text-transform: uppercase; letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  .tips-box {
+    background: linear-gradient(135deg, #f7f3ff 0%, #ede4ff 100%);
+    border-radius: 8px;
+    padding: 12px 16px;
+  }
+  .tips-box ol { padding-left: 18px; }
+  .tips-box li {
+    font-size: 14px; margin-bottom: 6px; color: #1f2328; line-height: 1.55;
+  }
+  .tips-box li:last-child { margin-bottom: 0; }
+  .tips-box li strong { color: #6e40c9; font-weight: 600; }
+  .card .why {
+    font-size: 13.5px; color: #57606a;
+    margin-top: 10px; line-height: 1.55;
+  }
+  .card .why strong { color: #1f2328; }
+  .card .risk {
+    font-size: 13px; color: #672021;
+    margin-top: 8px; padding: 7px 12px;
+    background: #fff4f4; border-left: 3px solid #cf222e;
+    border-radius: 4px;
+  }
+  .card .risk strong { color: #cf222e; }
+  .card .link-btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    margin-top: 12px;
+    background: #6e40c9; color: #fff !important;
+    text-decoration: none; padding: 7px 14px;
+    border-radius: 6px; font-size: 12.5px; font-weight: 500;
+  }
+  .card .link-btn::after { content: " →"; }
+
+  /* ========== 评分表（5 维 100 分）========== */
+  .footer-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin-top: 24px;
+    box-shadow: 0 1px 3px rgba(31,35,40,0.05);
+    border: 1px solid #eaeef2;
+  }
+  .footer-card h3 {
+    font-size: 14px; font-weight: 700; color: #6e40c9;
+    text-transform: uppercase; letter-spacing: 1px;
+    margin-bottom: 12px;
+  }
+  .score-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .score-table th, .score-table td {
+    text-align: left; padding: 8px 6px; border-bottom: 1px solid #eaeef2;
+  }
+  .score-table th {
+    font-weight: 600; color: #57606a; background: #f6f8fa; font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  .score-table td:first-child { font-weight: 600; }
+  .score-table td:last-child { color: #6e40c9; font-weight: 700; font-size: 15px; }
+
+  /* ========== 页脚 ========== */
+  .signoff {
+    text-align: center;
+    color: #8b949e;
+    font-size: 12px;
+    margin-top: 24px;
+    padding: 20px 16px;
+  }
+  .signoff .brand-mini {
+    font-size: 14px; font-weight: 700; color: #6e40c9;
+    margin-bottom: 4px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-top">
+      <div class="brand">
+        <div class="brand-cn">日新</div>
+        <div class="brand-en">Daily Fresh</div>
+      </div>
+      <div class="date">2026-06-19 · 周五</div>
+    </div>
+    <div class="hero-sub">GitHub 直播电商好物日报 · 每日 9:00 推送</div>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-num">216</div><div class="stat-label">候选</div></div>
+      <div class="stat"><div class="stat-num">5</div><div class="stat-label">入选</div></div>
+      <div class="stat"><div class="stat-num">3+1+1</div><div class="stat-label">主业+副业+中性</div></div>
+    </div>
+    <div class="quote">「苟日新，日日新，又日新」——《礼记·大学》</div>
+  </div>
+
+  <!-- 必看卡（编号 01，信息量最大） -->
+  <div class="must">
+    <div class="must-badge">今日必看</div>
+    <h2><a href="https://github.com/qiutongxue/oba-live-tool">qiutongxue/oba-live-tool</a></h2>
+    <div class="stats">
+      <span class="stars">⭐ 1,495</span>
+      <span>· TypeScript</span>
+      <span>· 直播电商</span>
+    </div>
+    <div class="what">
+      <strong>是什么：</strong>直播带货工具，支持抖音小店、巨量百应、抖音团购、小红书、视频号、快手小店、淘宝等 7 大平台后台自动化（Electron 桌面 + Playwright + React）。
+    </div>
+    <div class="tips">
+      <div class="tips-title">应用技巧 · 4 条</div>
+      <ol>
+        <li><strong>工作流协同：</strong>把日常 7 平台后台操作（巨量百应订单处理、小店商品上下架、橱窗管理）整合到 1 个桌面 App，每天节省 1-2 小时切后台时间</li>
+        <li><strong>立即可做：</strong>今天下载桌面 App（macOS/Windows），按 README 装 Playwright 浏览器驱动，绑定 1 个抖店账号先跑通自动登录</li>
+        <li><strong>真实案例：</strong>README 列出的支持平台：抖音小店、巨量百应、抖音团购、小红书、视频号、快手小店、淘宝——一次配置 7 平台互通</li>
+        <li><strong>vs 现在用法：</strong>以前要装 7 个商家后台 App + 手动复制订单数据，现在一个桌面 App 统一调度 + 抓取到本地</li>
+      </ol>
+    </div>
+    <div class="why"><strong>推荐理由：</strong>直接命中主业「直播电商」核心场景；1495 star + 昨天 6-18 还在 push，社区活跃；GitHub topics 列出 douyin / electron / playwright / react / xiaohongshu 五项覆盖 D1+D2</div>
+    <div class="risk"><strong>风险：</strong>Playwright 模拟浏览器操作有平台风控风险（抖店/百应对自动化点击较敏感），建议单账号低频使用，多账号需求先小范围测试</div>
+    <a class="link-btn" href="https://github.com/qiutongxue/oba-live-tool">查看 GitHub 仓库</a>
+  </div>
+
+  <!-- 普通卡 02-05 -->
+  
+  <div class="card">
+    <span class="card-rank">[02]</span>
+    <h2><a href="https://github.com/dososo/blcaptain-style-skill">dososo/blcaptain-style-skill</a></h2>
+    <div class="stats">
+      <span class="stars">⭐ 78</span>
+      <span class="lang">JavaScript</span>
+      <span class="dir">小红书/抖音内容</span>
+    </div>
+    <div class="what">
+      <strong>是什么：</strong>中文图文卡片生成 Skill：把一段文字内容转换为海报级图文组图，预设小红书 3:4 / 公众号封面比例，1 引擎 + 3 视觉语言（静纸 Still Paper / 实证 Empiric / 报道 Reportage），可在 Claude Code / Codex 等 agent 中调用。
+    </div>
+    <div class="section">
+      <div class="section-label">应用技巧 · 4 条</div>
+      <div class="tips-box">
+        <ol>
+          <li><strong>工作流协同：</strong>在 Hermes 装这个 Skill，苗苗/赵洪爽写完笔记文案后一句话生成小红书 3:4 海报 + 公众号封面，省去 Canva/创客贴操作</li>
+          <li><strong>立即可做：</strong>把七修-杏林有方最近一篇爆款养生笔记文案丢进去，生成 3 种视觉风格对比，挑一款定版</li>
+          <li><strong>真实案例：</strong>topics 列出 agent-skill / claude-skill / codex-skill——已为 Claude Code 和 Codex 适配，可在 Hermes 中直接调用</li>
+          <li><strong>vs 现在用法：</strong>以前开 Canva 选模板排版一张 3:4 卡片要 15-20 分钟，现在 Skill 一次跑完出 3 套方案</li>
+        </ol>
+      </div>
+    </div>
+    <div class="why"><strong>推荐理由：</strong>小红书 7:修-杏林有方主战场日更 1-3 篇，卡片生成是高频环节；agent skill 形态可批量调用</div>
+    <div class="risk"><strong>风险：</strong>78 star 社区验证少，先做 1-2 篇测试看 AI 生成的图能否达到手动 Canva 质量再规模化；视觉语言以中文审美为主，国际化场景弱</div>
+    <a class="link-btn" href="https://github.com/dososo/blcaptain-style-skill">查看 GitHub</a>
+  </div>
+  <div class="card">
+    <span class="card-rank">[03]</span>
+    <h2><a href="https://github.com/bytedance/UI-TARS-desktop">bytedance/UI-TARS-desktop</a></h2>
+    <div class="stats">
+      <span class="stars">⭐ 36,858</span>
+      <span class="lang">TypeScript</span>
+      <span class="dir">AI Agent</span>
+    </div>
+    <div class="what">
+      <strong>是什么：</strong>字节开源的多模态 AI Agent Stack：UI-TARS-desktop 把前沿多模态模型（视觉 + 推理 + 操作）打包为桌面 Agent，支持 browser-use / computer-use / cowork 三种工作模式，可控制浏览器/桌面完成复杂任务。
+    </div>
+    <div class="section">
+      <div class="section-label">应用技巧 · 4 条</div>
+      <div class="tips-box">
+        <ol>
+          <li><strong>工作流协同：</strong>Hermes 工作流里多一个『看屏幕 + 操作 GUI』的能力——比如让它自己点开蝉妈妈/千瓜抓数据、补 Hermes 没有的 GUI 操作场景</li>
+          <li><strong>立即可做：</strong>下载桌面 App（macOS/Windows/Linux），先跑 demo 模式让它打开一个网页+截图，看多模态识屏效果</li>
+          <li><strong>真实案例：</strong>topics 列出 agent / agent-tars / browser-use / computer-use / cowork——字节对『GUI Agent』的官方布局</li>
+          <li><strong>vs 现在用法：</strong>以前要写 Playwright 脚本控制浏览器，现在让 UI-TARS 看屏幕说『打开抖店后台、点订单管理、导出 Excel』</li>
+        </ol>
+      </div>
+    </div>
+    <div class="why"><strong>推荐理由：</strong>字节官方开源 + 36.8k star 是今天 D3 池最热；GUI Agent 是 2026 年 AI 应用最热方向之一（OpenAI Operator / Anthropic Computer Use 都是同方向）</div>
+    <div class="risk"><strong>风险：</strong>36.8k star 属『大平台边缘』，建议先看 demo 不动手——桌面 App 部署重；GUI Agent 操作稳定性还在演进，关键任务（如付款）不要让 Agent 直接执行</div>
+    <a class="link-btn" href="https://github.com/bytedance/UI-TARS-desktop">查看 GitHub</a>
+  </div>
+  <div class="card">
+    <span class="card-rank">[04]</span>
+    <h2><a href="https://github.com/sales-skills/sales">sales-skills/sales</a></h2>
+    <div class="stats">
+      <span class="stars">⭐ 53</span>
+      <span class="lang">Python</span>
+      <span class="dir">副业小红书</span>
+    </div>
+    <div class="what">
+      <strong>是什么：</strong>Claude Code 营销 / 销售 / GTM 场景的 skills 集合：CRM 接入、冷邮件开发、笔记记录、转化智能等 8+ 个场景 skill，可直接在 Claude Code 或 Hermes 中调用。
+    </div>
+    <div class="section">
+      <div class="section-label">应用技巧 · 4 条</div>
+      <div class="tips-box">
+        <ol>
+          <li><strong>工作流协同：</strong>在 Hermes 装这些 skills，让 AI 帮你写珠事皆宜小红书『达人合作 cold email』、做 KOL 报价分析、生成种草话术</li>
+          <li><strong>立即可做：</strong>clone 仓库到 ~/.hermes/skills/sales/，跑『seo-audit』skill 对珠事皆宜小红书主页做一次可见性检查</li>
+          <li><strong>真实案例：</strong>topics 列出 ai-skills / claude / claude-code / cold-email / conversion-intelligence——5 个场景覆盖营销全链路</li>
+          <li><strong>vs 现在用法：</strong>以前手工写达人合作邮件/做小红书种草话术，现在 AI 跑 skill 一键出初稿再人工润色</li>
+        </ol>
+      </div>
+    </div>
+    <div class="why"><strong>推荐理由：</strong>副业珠事皆宜的核心痛点是『写种草内容 + 找达人合作』，这俩 skill 集直接对应；Claude Code 官方生态，可与 Hermes 互通</div>
+    <div class="risk"><strong>风险：</strong>53 star 社区验证极少，先在小范围（1-2 封冷邮件）测试 AI 生成的转化率；cold email 在 2026 年反垃圾邮件规则严，AI 模板可能被识别为批量邮件</div>
+    <a class="link-btn" href="https://github.com/sales-skills/sales">查看 GitHub</a>
+  </div>
+  <div class="card">
+    <span class="card-rank">[05]</span>
+    <h2><a href="https://github.com/comet-ml/opik">comet-ml/opik</a></h2>
+    <div class="stats">
+      <span class="stars">⭐ 19,694</span>
+      <span class="lang">Python</span>
+      <span class="dir">数据协同</span>
+    </div>
+    <div class="what">
+      <strong>是什么：</strong>LLM 应用 debug / 评估 / 监控平台：跟踪 RAG / agent 工作流，trace LLM 调用链，跑 eval 集评估 prompt 效果，对接 LangChain / LlamaIndex / OpenAI / Anthropic 全生态。
+    </div>
+    <div class="section">
+      <div class="section-label">应用技巧 · 4 条</div>
+      <div class="tips-box">
+        <ol>
+          <li><strong>工作流协同：</strong>Hermes / Claude Code 里调 LLM 时挂上 opik，trace 每次调用的 token/延迟/失败率，发现哪类 prompt 最贵</li>
+          <li><strong>立即可做：</strong>pip install opik 后跑 opik configure 接入，wrap 一个常用 prompt 跑一次看 trace 长什么样</li>
+          <li><strong>真实案例：</strong>topics 列出 evaluation / langchain / llama-index——已为 RAG/Agent 主流框架预置集成</li>
+          <li><strong>vs 现在用法：</strong>以前 LLM 调用黑盒——失败不知道为什么贵，现在 opik 给出每步 token/延迟 trace</li>
+        </ol>
+      </div>
+    </div>
+    <div class="why"><strong>推荐理由：</strong>Hermes / Claude Code 是 LLM 重度用户，opik 是评估 LLM 应用最成熟的 OSS 之一；19.7k star + 昨天还在 push，社区活跃</div>
+    <div class="risk"><strong>风险：</strong>OSS 版需要自托管（Docker），云版有免费额度但生产规模要付费；trace 数据含 prompt 敏感信息，自托管注意访问控制</div>
+    <a class="link-btn" href="https://github.com/comet-ml/opik">查看 GitHub</a>
+  </div>
+
+  <!-- 评分表（5 维 100 分） -->
+  <div class="footer-card">
+    <h3>评分明细 · 6 维（理论满分 105 分）</h3>
+    <table class="score-table">
+      <thead>
+        <tr>
+          <th>项目</th>
+          <th>主题30</th>
+          <th>拿来25</th>
+          <th>活跃15</th>
+          <th>热度15</th>
+          <th>替代10</th>
+          <th>协同10</th>
+          <th>总分</th>
+        </tr>
+      </thead>
+      <tbody><tr><td>qiutongxue/oba-live-tool</td><td>10</td><td>9</td><td>8</td><td>5</td><td>9</td><td>9</td><td>9.0</td></tr>
+        <tr><td>dososo/blcaptain-style-skill</td><td>9</td><td>9</td><td>6</td><td>3</td><td>8</td><td>8</td><td>8.2</td></tr>
+        <tr><td>bytedance/UI-TARS-desktop</td><td>9</td><td>6</td><td>8</td><td>7</td><td>7</td><td>8</td><td>8.1</td></tr>
+        <tr><td>sales-skills/sales</td><td>9</td><td>7</td><td>6</td><td>2</td><td>8</td><td>8</td><td>7.6</td></tr>
+        <tr><td>comet-ml/opik</td><td>7</td><td>8</td><td>8</td><td>6</td><td>8</td><td>9</td><td>8.1</td></tr></tbody>
+    </table>
+  </div>
+
+  <!-- 页脚 -->
+  <div class="signoff">
+    <div class="brand-mini">日新 Daily Fresh</div>
+    <div>由 github-trending-monitor skill 自动生成</div>
+    <div>每日 9:00 推送 · cron job github-trending-2026-06-19</div>
+  </div>
+
+</div>
+</body>
+</html>
