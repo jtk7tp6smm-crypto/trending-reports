@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+<title>日新 Daily Fresh · 2026-06-20</title>
+<style>
+  *,*::before,*::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI", sans-serif;
+    background: #fafbfc;
+    color: #1f2328;
+    line-height: 1.75;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  a { color: #0969da; text-decoration: none; word-break: break-all; }
+  a:hover { text-decoration: underline; }
+  h1, h2, h3 { line-height: 1.35; color: #1f2328; font-weight: 700; }
+  p { margin: 0 0 12px; }
+  ul { margin: 0 0 12px 20px; }
+  li { margin-bottom: 4px; }
+  code { background: #f6f8fa; padding: 1px 6px; border-radius: 4px; font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 13px; color: #1f2328; }
+
+  .wrap { max-width: 720px; margin: 0 auto; padding: 0 16px; }
+
+  /* Hero */
+  .hero {
+    background: linear-gradient(135deg, #6e40c9 0%, #4f2e9c 100%);
+    color: #ffffff;
+    padding: 28px 0 32px;
+    margin-bottom: 24px;
+  }
+  .hero .wrap { padding: 0 16px; }
+  .brand-row { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 16px; flex-wrap: wrap; gap: 8px; }
+  .brand { font-size: 14px; font-weight: 700; letter-spacing: 0.5px; opacity: 0.9; }
+  .date { font-size: 13px; opacity: 0.85; }
+  .hero h1 { font-size: 26px; font-weight: 800; line-height: 1.3; margin-bottom: 8px; }
+  .hero .lede { font-size: 15px; line-height: 1.7; opacity: 0.92; margin-bottom: 20px; }
+  .hero .lede strong { font-weight: 700; }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    background: rgba(255,255,255,0.12);
+    border-radius: 10px;
+    padding: 14px 8px;
+    margin-bottom: 16px;
+  }
+  .stat { text-align: center; min-width: 0; }
+  .stat-num { font-size: 22px; font-weight: 800; line-height: 1.2; }
+  .stat-label { font-size: 11px; opacity: 0.85; margin-top: 2px; line-height: 1.3; }
+
+  .hero-question {
+    background: rgba(255,255,255,0.12);
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  .hero-question .q { font-size: 12px; opacity: 0.8; margin-bottom: 4px; letter-spacing: 0.3px; }
+  .hero-question .a { font-size: 15px; font-weight: 600; }
+
+  @media (max-width: 480px) {
+    .stats { grid-template-columns: repeat(2, 1fr); gap: 6px; }
+    .stat-num { font-size: 20px; }
+    .hero h1 { font-size: 22px; }
+  }
+
+  /* Section */
+  .section { margin: 24px 0; }
+  .section-title { font-size: 17px; font-weight: 800; margin-bottom: 14px; padding-bottom: 8px; border-bottom: 2px solid #eaeef2; color: #1f2328; }
+
+  /* Main card (Agent-Reach) */
+  .card-main {
+    background: #ffffff;
+    border: 2px solid #6e40c9;
+    border-radius: 14px;
+    padding: 0;
+    margin-bottom: 18px;
+    box-shadow: 0 6px 22px rgba(110,64,201,0.12);
+    overflow: hidden;
+  }
+  .card-main-header {
+    background: linear-gradient(135deg, #6e40c9 0%, #4f2e9c 100%);
+    color: #fff;
+    padding: 16px 20px;
+  }
+  .card-main-header .label {
+    display: inline-block;
+    background: rgba(255,255,255,0.25);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 3px;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+  }
+  .card-main-header h2 { font-size: 22px; font-weight: 800; color: #fff; margin-bottom: 4px; }
+  .card-main-header .lang { font-size: 12px; opacity: 0.85; }
+  .card-main-header a { color: #fff; text-decoration: underline; text-decoration-color: rgba(255,255,255,0.4); }
+  .card-main-body { padding: 18px 20px; }
+
+  /* Standard card */
+  .card {
+    background: #ffffff;
+    border: 1px solid #eaeef2;
+    border-radius: 12px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+  }
+  .card .label-sm {
+    display: inline-block;
+    background: #ddf4ff;
+    color: #0969da;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    letter-spacing: 0.4px;
+    margin-bottom: 6px;
+  }
+  .card h2 { font-size: 18px; font-weight: 800; margin-bottom: 6px; }
+  .card h3 { font-size: 14px; font-weight: 700; color: #57606a; margin: 14px 0 6px; }
+  .card p { font-size: 14.5px; line-height: 1.75; margin-bottom: 10px; }
+  .card ul { padding-left: 18px; margin: 4px 0 10px; }
+  .card li { font-size: 14.5px; line-height: 1.75; }
+
+  /* Tags */
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 14px; }
+  .tag {
+    display: inline-block;
+    background: #f6f8fa;
+    color: #1f2328;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 14px;
+    border: 1px solid #eaeef2;
+    line-height: 1.3;
+  }
+  .tag.stars { background: #fff8c5; border-color: #f0d970; color: #735c0f; }
+  .tag.growth { background: #ddf4ff; border-color: #b6e3ff; color: #0969da; }
+  .tag.growth-unknown { background: #f6f8fa; border-color: #d0d7de; color: #57606a; }
+  .tag.mode { background: #dafbe1; border-color: #aceebb; color: #1a7f37; }
+  .tag.dir { background: #f5f0ff; border-color: #d4c5f9; color: #6e40c9; }
+
+  /* Risk callout */
+  .risk {
+    background: #fff7ed;
+    border-left: 3px solid #d97706;
+    padding: 10px 14px;
+    border-radius: 0 6px 6px 0;
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #7c2d12;
+  }
+  .risk strong { color: #9a3412; font-weight: 700; }
+
+  /* Action callout */
+  .action {
+    background: #f0f9ff;
+    border-left: 3px solid #0969da;
+    padding: 10px 14px;
+    border-radius: 0 6px 6px 0;
+    margin: 10px 0;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #0c4a6e;
+  }
+  .action strong { color: #075985; font-weight: 700; }
+
+  /* Verdict */
+  .verdict {
+    display: inline-block;
+    background: #6e40c9;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-right: 6px;
+  }
+
+  /* Compact skip/gaps list */
+  .list {
+    background: #ffffff;
+    border: 1px solid #eaeef2;
+    border-radius: 10px;
+    padding: 4px 16px;
+    margin-bottom: 12px;
+  }
+  .list ul { margin: 8px 0; padding-left: 20px; }
+  .list li { font-size: 13.5px; line-height: 1.7; }
+  .list li strong { color: #1f2328; font-weight: 600; }
+
+  /* Boundary / info */
+  .info {
+    background: #fff8c5;
+    border: 1px solid #f0d970;
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin: 16px 0;
+    font-size: 13.5px;
+    line-height: 1.75;
+    color: #735c0f;
+  }
+  .info strong { color: #735c0f; font-weight: 700; }
+  .info ul { margin: 6px 0 4px 20px; }
+  .info li { font-size: 13.5px; }
+
+  /* Details (fold) */
+  details { background: #ffffff; border: 1px solid #eaeef2; border-radius: 10px; padding: 12px 16px; margin-bottom: 12px; }
+  details summary { cursor: pointer; font-weight: 700; color: #1f2328; padding: 4px 0; font-size: 14px; list-style: none; }
+  details summary::-webkit-details-marker { display: none; }
+  details summary::before { content: "▸ "; color: #6e40c9; font-weight: 400; }
+  details[open] summary::before { content: "▾ "; }
+  details .body { padding-top: 12px; font-size: 14px; line-height: 1.75; color: #1f2328; }
+  details .body p { margin-bottom: 8px; }
+  details .body ul { margin-bottom: 8px; }
+
+  /* Source links */
+  .source-list { background: #f6f8fa; border-radius: 8px; padding: 10px 14px; margin: 10px 0; font-size: 13px; }
+  .source-list strong { color: #57606a; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.3px; }
+  .source-list ul { list-style: none; padding: 0; margin: 6px 0 0; }
+  .source-list li { margin: 3px 0; font-size: 13px; word-break: break-all; }
+
+  /* Footer */
+  .footer {
+    margin-top: 32px;
+    padding: 24px 0 32px;
+    border-top: 1px solid #eaeef2;
+    text-align: center;
+    font-size: 12px;
+    color: #8b949e;
+    line-height: 1.7;
+  }
+  .footer .brand-tag { color: #6e40c9; font-weight: 700; }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="wrap">
+    <div class="brand-row">
+      <div class="brand">日新 Daily Fresh</div>
+      <div class="date">2026-06-20（周六）</div>
+    </div>
+    <h1>今天最值得看什么？</h1>
+    <p class="lede">先看市场信号，再看是否适合你。<strong>Agent-Reach</strong> 是本期市场增长最强（54.55 小时 +2096 stars，+6.32%）的跨平台调研工具。</p>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-num">73</div>
+        <div class="stat-label">三通道候选</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">18</div>
+        <div class="stat-label">通过市场门槛</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">1</div>
+        <div class="stat-label">主推荐</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">4</div>
+        <div class="stat-label">观察项目</div>
+      </div>
+    </div>
+
+    <div class="hero-question">
+      <div class="q">如果只做一个动作</div>
+      <div class="a">用 30 分钟评估 Agent-Reach 能否补足你的跨平台调研缺口</div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+<!-- 今日结论 -->
+<div class="section">
+  <h2 class="section-title">今日结论</h2>
+  <p><strong>今天 5 个项目同时具备市场热度和你的相关方向</strong>：Agent-Reach（跨平台调研，增长最强）、headroom（token 优化）、AiToEarn（副业变现借鉴）、HyperFrames（视频生产）、Dify（Agentic workflow 学习）。</p>
+  <p><strong>如果只做一个动作</strong>：用 30 分钟评估 Agent-Reach 能否补足你的跨平台调研缺口。它方向最相关，但需先确认你愿意为多上游依赖和账号风控付出代价。</p>
+</div>
+
+<!-- 主推：Agent-Reach -->
+<div class="card-main">
+  <div class="card-main-header">
+    <div class="label">主推荐</div>
+    <h2><a href="https://github.com/Panniantong/Agent-Reach" target="_blank" rel="noopener noreferrer">Agent-Reach</a></h2>
+    <div class="lang">Panniantong/Agent-Reach · MIT License</div>
+  </div>
+  <div class="card-main-body">
+
+    <div class="tags">
+      <span class="tag stars">⭐ 35,313 stars</span>
+      <span class="tag growth">+2,096 stars（54.55h，+6.32%）</span>
+      <span class="tag mode">值得试用评估</span>
+      <span class="tag dir">工具效率</span>
+      <span class="tag dir">跨平台调研</span>
+      <span class="tag dir">GEO 学习</span>
+      <span class="tag dir">自媒体选题</span>
+    </div>
+
+    <h3>它是什么</h3>
+    <p>给 AI Agent 补充跨平台读取能力的工具集合，统一 9+ 平台（推特/Reddit/YouTube/GitHub/B 站/小红书等）的数据获取接口，让 Agent 自己选择和调用上游。</p>
+
+    <h3>对你可能有用</h3>
+    <p>Hermes 当前浏览器 + 小红书 + GitHub 三件套能覆盖一部分跨平台调研，但没编排成"一次提问多平台汇总"的路径。Agent-Reach 的增量价值在"把分散能力编排"这件事本身。</p>
+
+    <h3>需要警惕什么</h3>
+    <ul>
+      <li>依赖多个第三方上游，某个失效会影响整体</li>
+      <li>Twitter/Reddit/小红书需登录或 Cookie，账号风控风险存在</li>
+      <li>安装涉及 Python、Node.js、GitHub CLI、MCP 依赖，不是单文件工具</li>
+    </ul>
+
+    <div class="action">
+      <strong>30 分钟行动：</strong>不安装前提下：(1) 看 README 平台支持列表 5 分钟；(2) 列出你最常做的 3 个跨平台调研任务，对照是否覆盖；(3) 让 Codex/Hermes 评估安装可行性；(4) 决定试用前先用专用小号。
+    </div>
+
+    <h3>我的判断</h3>
+    <p>先做能力评估再决定是否进入安全模式试用。即使最终不安装，它的多平台路由设计也值得作为 Agent 工具编排案例学习。</p>
+
+    <div class="source-list">
+      <strong>来源</strong>
+      <ul>
+        <li><a href="https://github.com/Panniantong/Agent-Reach" target="_blank" rel="noopener noreferrer">github.com/Panniantong/Agent-Reach</a></li>
+        <li><a href="https://github.com/Panniantong/Agent-Reach/blob/main/README.md" target="_blank" rel="noopener noreferrer">README · github.com/Panniantong/Agent-Reach/blob/main/README.md</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- 4 个观察项目 -->
+<div class="section">
+  <h2 class="section-title">值得按方向启用：4 个观察项目</h2>
+
+  <!-- headroom -->
+  <div class="card">
+    <div class="label-sm">观察项目</div>
+    <h2>headroom — AI 上下文压缩</h2>
+    <div class="tags">
+      <span class="tag stars">⭐ 39,640 stars</span>
+      <span class="tag growth-unknown">增长未知（缺前一日快照）</span>
+      <span class="tag mode">值得试用评估</span>
+      <span class="tag dir">工具效率（降低 token 消耗）</span>
+    </div>
+    <p>39.6k stars，6-20 当天仍在更新。在工具输出、日志、文件、RAG chunk 送进 LLM 前压缩。</p>
+    <div class="risk">
+      <strong>风险提醒：</strong>README 提到"60% reduction"是项目方自述，未独立验证；压缩策略有误删关键信息的风险。
+    </div>
+    <p>建议先在非关键任务上测试，观察输出质量是否下降。</p>
+    <div class="source-list">
+      <strong>来源</strong>
+      <ul>
+        <li><a href="https://github.com/chopratejas/headroom" target="_blank" rel="noopener noreferrer">github.com/chopratejas/headroom</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- AiToEarn -->
+  <div class="card">
+    <div class="label-sm">观察项目</div>
+    <h2>AiToEarn — AI 内容 + 多平台变现</h2>
+    <div class="tags">
+      <span class="tag stars">⭐ 21,515 stars</span>
+      <span class="tag growth-unknown">增长未知（缺前一日快照）</span>
+      <span class="tag mode">值得学习借鉴</span>
+      <span class="tag dir">副业与商业化</span>
+    </div>
+    <p>21.5k stars，6-18 仍在更新。它把"AI 内容生成 → 多平台分发 → 数据追踪"串成一条工作流。如果你打算把"珠事皆宜"做成可持续矩阵，它的流程值得抽象。</p>
+    <div class="risk">
+      <strong>风险提醒：</strong>README 中"Let's use AI to Earn!"是项目方主张，不等于你用了就能赚；变现路径依赖平台规则变化。
+    </div>
+    <p>建议只借鉴流程，不直接复制变现路径。</p>
+    <div class="source-list">
+      <strong>来源</strong>
+      <ul>
+        <li><a href="https://github.com/yikart/AiToEarn" target="_blank" rel="noopener noreferrer">github.com/yikart/AiToEarn</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- HyperFrames -->
+  <div class="card">
+    <div class="label-sm">观察项目</div>
+    <h2>HyperFrames — HTML 转视频</h2>
+    <div class="tags">
+      <span class="tag stars">⭐ 28,953 stars</span>
+      <span class="tag growth-unknown">增长未知（缺前一日快照）</span>
+      <span class="tag mode">值得试用评估</span>
+      <span class="tag dir">自媒体创作（短视频生产）</span>
+    </div>
+    <p>29k stars，6-20 当天仍在更新。把 AI 生成的 HTML 模板自动渲染成可发布视频。</p>
+    <div class="risk">
+      <strong>风险提醒：</strong>HTML 自动渲染的视频能否适合小红书、抖音等平台，当前没有可靠数据。建议先做少量样片，人工检查视觉效果、内容质量和平台反馈后再决定是否扩大使用。
+    </div>
+    <div class="source-list">
+      <strong>来源</strong>
+      <ul>
+        <li><a href="https://github.com/heygen-com/hyperframes" target="_blank" rel="noopener noreferrer">github.com/heygen-com/hyperframes</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Dify -->
+  <div class="card">
+    <div class="label-sm">观察项目</div>
+    <h2>Dify — Agentic workflow 学习材料</h2>
+    <div class="tags">
+      <span class="tag stars">⭐ 145,886 stars</span>
+      <span class="tag growth">+254 stars（54.55h，+0.17%）</span>
+      <span class="tag mode">值得学习借鉴</span>
+      <span class="tag dir">GEO 与 AI 应用学习</span>
+    </div>
+    <p>145.9k stars + 54.55h 内 +254 stars，体量最大。可视化工作流编排 + LLM/RAG/Agent 集成 + 调试监控，官方文档和案例是 Agentic workflow 学习的好材料。</p>
+    <p>Dify 当前体量很大，本次 54.55 小时窗口内新增 254 stars，绝对增量较高、相对增幅较低。单个短期窗口不足以判断长期增长阶段，是否适合刘帅主要取决于学习价值和部署门槛。</p>
+    <p>建议先读文档与案例，不立即部署——本地部署需要 Docker + 数据库 + LLM API key，对非程序员门槛较高。</p>
+    <div class="source-list">
+      <strong>来源</strong>
+      <ul>
+        <li><a href="https://github.com/langgenius/dify" target="_blank" rel="noopener noreferrer">github.com/langgenius/dify</a></li>
+        <li><a href="https://docs.dify.ai/" target="_blank" rel="noopener noreferrer">docs.dify.ai/（官方文档）</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- 热门但当前增量价值有限 -->
+<div class="section">
+  <h2 class="section-title">热门但当前增量价值有限</h2>
+  <div class="list">
+    <ul>
+      <li><strong>xpzouying/xiaohongshu-mcp</strong>（14.3k stars + established_hot）：项目市场热度充足，但与刘帅当前已有小红书能力重叠，本期不列入前 5 推荐。</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 折叠：热门但暂不适合你 -->
+<details>
+  <summary>热门但暂不适合你（9 项）</summary>
+  <div class="body">
+    <ul>
+      <li><strong>Snailclimb/JavaGuide</strong>（15.6 万 stars）：Java 后端面试，与直播+小红书+AI 主业无关。</li>
+      <li><strong>jeecgboot/JeecgBoot</strong>（4.7 万 stars）：企业级低代码平台，部署重，对非程序员门槛过高。</li>
+      <li><strong>aaif-goose/goose + lobehub + CowAgent</strong>：与 Hermes/Codex 功能重叠，无迁移理由。</li>
+      <li><strong>dreammis/social-auto-upload</strong>：声称一键发布 7+ 平台。自动登录、批量发布和多平台操作可能涉及平台账号与自动化规则，但本期未核验各平台官方政策，不能量化风险。若评估此类工具，应先核对官方规则，并避免直接使用重要账号测试。</li>
+      <li><strong>putyy/res-downloader</strong>：视频/小红书/直播流等下载工具。下载工具可以用于处理自己拥有授权的素材；未经授权保存、传播或二次发布他人内容，可能产生版权和平台合规风险。风险取决于具体使用方式，不能仅因项目具备下载功能就判定违规。</li>
+      <li><strong>JoeanAmier/XHS-Downloader</strong>：小红书作品采集工具，下载工具的合规性取决于具体使用方式——处理自己拥有授权的素材可行；未经授权保存、传播或二次发布他人内容，可能产生版权和平台合规风险。</li>
+      <li><strong>Skyvern-AI/skyvern</strong>：浏览器自动化，与 Hermes 现有能力重叠。</li>
+    </ul>
+  </div>
+</details>
+
+<!-- 折叠：市场信号不足但值得观察 -->
+<details>
+  <summary>市场信号不足但值得观察</summary>
+  <div class="body">
+    <p>本期有少量"匹配画像但本次快照缺历史增长数据"的项目（如 chubbyskills）。这些项目未通过本次市场门槛（缺增长证据），不能列为今日推荐。</p>
+  </div>
+</details>
+
+<!-- 信息边界 -->
+<div class="info">
+  <strong>本期信息边界：</strong>数据来自 GitHub 仓库、README 和元数据，只能说明 GitHub 项目中出现了什么，不能证明当天没有新的模型、API、平台政策或官方产品更新。
+  <strong>54.55 小时增长窗口</strong>来自 2026-06-18 到 2026-06-20 的 snapshot 跨日对比（18 号时间戳是文件 mtime 近似值，起点时间为近似时间）。
+  在接入 OpenAI / Anthropic / 小红书 / 抖音官方信息源之前，本报告不对"今天整个 AI 行业 / 平台规则有没有重要新闻"下结论。
+</div>
+
+<!-- 折叠：明天只追踪两件事 -->
+<details>
+  <summary>明天只追踪两件事</summary>
+  <div class="body">
+    <ol style="padding-left: 22px;">
+      <li>Agent-Reach 30 分钟评估结果——能否补足一个高频跨平台调研场景。</li>
+      <li>今天推荐的项目无新 release 或用户反馈，明天不重复推荐。</li>
+    </ol>
+  </div>
+</details>
+
+<!-- Footer -->
+<div class="footer">
+  <div><span class="brand-tag">日新 Daily Fresh</span></div>
+  <div>报告日期：2026-06-20（周六）· 试跑第 3/7 天</div>
+  <div>由 Hermes 手工核验 + v1.1 渲染器生成</div>
+</div>
+
+</div>
+
+</body>
+</html>
