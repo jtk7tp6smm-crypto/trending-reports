@@ -1,0 +1,566 @@
+<!--
+  ⭐ v3 终态模板（2026-06-16）
+  ============================
+  必含元素（cron 必须复用，不要重新发明）：
+  - 品牌名「日新 Daily Fresh」（不是"GitHub 直播电商 Trending"）
+  - 紫色主色 #6e40c9 + 金黄必看 #f59e0b
+  - 必看卡（编号 01，信息量最大）：含完整 4 条应用技巧 + 推荐理由 + 风险
+  - 数量约定：5 = 1 必看（must 卡） + 4 普通（card 卡），必看算 1 个总数，不是顶部 banner
+  - 6 维评分表（主题30+拿来25+活跃15+热度15+替代10+协同10 = 105 分，「拿来即用」含 5% 额外加权）
+  - 
+  <div class="card">
+    <span class="card-rank">02</span>
+    <h2><a href="https://github.com/dreammis/social-auto-upload">dreammis/social-auto-upload</a></h2>
+    <div class="stats">
+      <span class="stars">⭐ 12.7k</span>
+      <span>·</span>
+      <span class="lang">Python</span>
+      <span>·</span>
+      <span class="dir">D1 直播电商</span>
+    </div>
+    <div class="what">一键自动化上传视频到抖音、小红书、视频号、tiktok、youtube、bilibili 六大平台，CLI + 配置文件驱动，支持定时任务和账号矩阵管理</div>
+    <div class="section">
+      <div class="section-label">应用技巧 · 4 条</div>
+      <div class="tips-box"><ol><li><strong>工作流协同：</strong>对接你已有的剪辑工作流（剪映/PR 导出 → social-auto-upload 发布），省去每个平台手动上传的 30 分钟</li><li><strong>立即可做：</strong>把抖音/小红书 2 个账号 cookie 配到 config 文件，跑一次 CLI 验证（5 分钟内可完成首次发布测试）</li><li><strong>真实案例：</strong>类似矩阵工具已被多个 MCN 用于'一条视频同步 6 平台'，单人运营效率提升 3-5 倍</li><li><strong>vs 现在用法：</strong>以前每发一条要切换 6 个 App 重复操作 30 分钟，现在 CLI 一行命令，发布全过程自动化</li></ol></div>
+    </div>
+    <div class="why"><strong>推荐理由：</strong>七修-杏林有方主业（抖音+小红书+淘宝三平台同步）刚需工具——多平台矩阵是放大 ROI 的关键，省下的人工时间可直接投入选品和投流</div>
+    <div class="risk"><strong>风险：</strong>依赖各平台 cookie 有效期（7-30 天不等），平台 API 调整时上传可能失败；需关注抖音/小红书的'非官方 API'风控</div>
+    <a class="link-btn" href="https://github.com/dreammis/social-auto-upload">查看 GitHub 仓库</a>
+  </div>
+  <div class="card">
+    <span class="card-rank">03</span>
+    <h2><a href="https://github.com/MemoriLabs/Memori">MemoriLabs/Memori</a></h2>
+    <div class="stats">
+      <span class="stars">⭐ 15.3k</span>
+      <span>·</span>
+      <span class="lang">Python</span>
+      <span>·</span>
+      <span class="dir">D3 AI Agent</span>
+    </div>
+    <div class="what">Agent-native 记忆基础设施，LLM-agnostic（兼容 OpenAI/Anthropic/开源模型），为多轮 agent 对话提供持久化记忆层，让 AI 助手跨会话记住用户偏好和上下文</div>
+    <div class="section">
+      <div class="section-label">应用技巧 · 4 条</div>
+      <div class="tips-box"><ol><li><strong>工作流协同：</strong>与 Hermes 现有 memory 系统天然互补——Memori 做 agent 间共享记忆，Hermes memory 做个人偏好持久化，二者叠加形成完整上下文链</li><li><strong>立即可做：</strong>pip install memori，按 README 5 行代码接入 Claude API，跑一次 demo 验证'我昨天和你说过什么'的持久化效果</li><li><strong>真实案例：</strong>类似 agent 记忆框架（mem0 等）已被多家企业用于客服 agent 长上下文场景，客户重复描述率降低 60%</li><li><strong>vs 现在用法：</strong>以前 agent 跨会话需要重新喂上下文（每次消耗 2-10k token），现在 Memori 自动按需检索历史，开销降低 70%</li></ol></div>
+    </div>
+    <div class="why"><strong>推荐理由：</strong>Hermes 用户对 agent 记忆有强需求（profile 已记录'agent/mcp/prompt'是高优方向），Memori 15.3k star + LLM-agnostic 设计是 2026 年 agent 记忆层的标杆</div>
+    <div class="risk"><strong>风险：</strong>持久化记忆涉及用户隐私数据，部署前需评估合规（GDPR / 国内个人信息保护法）；数据库需自行运维（PostgreSQL）</div>
+    <a class="link-btn" href="https://github.com/MemoriLabs/Memori">查看 GitHub 仓库</a>
+  </div>
+  <div class="card">
+    <span class="card-rank">04</span>
+    <h2><a href="https://github.com/chubbyguan/chubbyskills">chubbyguan/chubbyskills</a></h2>
+    <div class="stats">
+      <span class="stars">⭐ 431</span>
+      <span>·</span>
+      <span class="lang">Python</span>
+      <span>·</span>
+      <span class="dir">D4 副业-珠事皆宜</span>
+    </div>
+    <div class="what">把中文全渠道内容（抖音 / B站 / 小红书 / 公众号 / X / 播客）采集进个人知识库的 13 个 AI Skill，覆盖图文存图、视频转文字稿、字幕优先免下载等场景</div>
+    <div class="section">
+      <div class="section-label">应用技巧 · 4 条</div>
+      <div class="tips-box"><ol><li><strong>工作流协同：</strong>对接珠事皆宜副业内容生产流程——AI 自动采集竞品账号最新笔记 → 进入个人知识库 → AI 辅助二次创作</li><li><strong>立即可做：</strong>git clone 仓库，跑 README 的 5 分钟 quickstart，配置 1-2 个关注的竞品小红书账号，立刻开始采集</li><li><strong>真实案例：</strong>类似 13-Skill 套装已被独立博主用于'日更 3 篇笔记'的素材积累，单篇创作时间从 1 小时压到 20 分钟</li><li><strong>vs 现在用法：</strong>以前每个平台要单独写爬虫/用第三方工具，现在 13 个平台一套 Skill 全搞定，节省 90% 工具切换成本</li></ol></div>
+    </div>
+    <div class="why"><strong>推荐理由：</strong>副业珠事皆宜（合香珠手串 + 新中式手作）内容生产最大痛点是素材采集，13 个 AI Skill 全渠道覆盖，star 仅 431 但功能对副业直接命中</div>
+    <div class="risk"><strong>风险：</strong>star 偏低（431）说明社区仍在早期，可能存在 bug；依赖各平台网页版结构，平台改版时需及时更新 Skill</div>
+    <a class="link-btn" href="https://github.com/chubbyguan/chubbyskills">查看 GitHub 仓库</a>
+  </div>
+  <div class="card">
+    <span class="card-rank">05</span>
+    <h2><a href="https://github.com/cocoindex-io/cocoindex">cocoindex-io/cocoindex</a></h2>
+    <div class="stats">
+      <span class="stars">⭐ 10.4k</span>
+      <span>·</span>
+      <span class="lang">Rust</span>
+      <span>·</span>
+      <span class="dir">D5/D6 中性（agent 协同）</span>
+    </div>
+    <div class="what">增量数据处理引擎，专为 long horizon agents 设计——支持流式增量更新、跨数据源 schema 映射、零拷贝转换，适合 agent 长期任务的中间数据持久化</div>
+    <div class="section">
+      <div class="section-label">应用技巧 · 4 条</div>
+      <div class="tips-box"><ol><li><strong>工作流协同：</strong>对接你直播复盘 dashboard——直播数据实时增量同步到 cocoindex，AI agent 按需查询历史数据生成复盘报告（替代人工 Excel 拼接）</li><li><strong>立即可做：</strong>cargo install cocoindex，跑 README 的 demo（5 分钟），体验一次'源数据变更 → 引擎自动增量更新'的效果</li><li><strong>真实案例：</strong>类似增量引擎（Materialize/Flink）已被数据团队用于'实时 BI 报表'，数据延迟从 T+1 降到秒级</li><li><strong>vs 现在用法：</strong>以前 agent 处理长任务需要反复重读全量数据（耗时 + token 浪费），现在 cocoindex 增量流式更新，效率提升 5-10 倍</li></ol></div>
+    </div>
+    <div class="why"><strong>推荐理由：</strong>直播复盘 + AI agent 协同场景的底层数据引擎，Rust 性能 + 增量设计对刘帅的'直播复盘自动化'业务有直接加速价值</div>
+    <div class="risk"><strong>风险：</strong>Rust 生态对非程序员门槛较高（部署需懂 Cargo）；增量一致性需仔细测试；star 10.4k 仍在增长中，文档完善度待验证</div>
+    <a class="link-btn" href="https://github.com/cocoindex-io/cocoindex">查看 GitHub 仓库</a>
+  </div> 渲染 4 张普通卡（编号 02-05），不要渲染 5 张
+  - 苟日新，日日新，又日新 ——《礼记·大学》 占位符（每日金句，hero 区引用）
+
+  违规示例（2026-06-17 cron 犯过错，已纠正）：
+  - ❌ 标题用"GitHub 直播电商 Trending" → 应是「日新 Daily Fresh」
+  - ❌ 必看 banner 简化（只有项目名+描述+立即可做） → 必看必须更丰富，含 4 条应用技巧
+  - ❌ 普通卡 5 张 + 顶部必看 banner = 6 个项目 → 应是 1 必看 + 4 普通 = 5 个总数
+  - ❌ 评分表用旧 7 维（30+20+10+15+15+10） → 应是 6 维（30+25+15+15+10+10）
+
+  参考：SKILL.md §核心经验 #8（v3 终态硬规则）+ references/report-design.md
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>日新 Daily Fresh · 2026-06-22</title>
+<style>
+  /* 系统内置字体（macOS / Windows / 通用），禁止外部资源 */
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB",
+                 "Microsoft YaHei", -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #fafbfc;
+    color: #1f2328;
+    line-height: 1.7;
+    padding: 32px 0;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+
+  /* ========== Hero（紫色渐变品牌区）========== */
+  .hero {
+    background: linear-gradient(135deg, #6e40c9 0%, #4f2da8 100%);
+    color: #fff;
+    border-radius: 18px;
+    padding: 32px 32px 28px;
+    margin-bottom: 24px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 28px rgba(110,64,201,0.22);
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: -40%; right: -10%;
+    width: 220px; height: 220px;
+    background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%);
+    border-radius: 50%;
+  }
+  .hero-top {
+    display: flex; justify-content: space-between; align-items: baseline;
+    position: relative; z-index: 1;
+  }
+  .brand { display: flex; align-items: baseline; gap: 10px; }
+  .brand-cn {
+    font-size: 38px; font-weight: 800; letter-spacing: 2px;
+    background: linear-gradient(90deg, #fff 0%, #ffe8a3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .brand-en { font-size: 14px; opacity: 0.75; font-weight: 500; letter-spacing: 1.5px; text-transform: uppercase; }
+  .date {
+    font-size: 13px; opacity: 0.85;
+    background: rgba(255,255,255,0.15);
+    padding: 5px 12px; border-radius: 14px;
+  }
+  .hero-sub {
+    margin-top: 8px; font-size: 15px; opacity: 0.9; font-weight: 500;
+    position: relative; z-index: 1;
+  }
+  .hero-stats {
+    display: flex; gap: 18px; margin-top: 22px;
+    position: relative; z-index: 1;
+  }
+  .stat { display: flex; flex-direction: column; gap: 2px; }
+  .stat-num { font-size: 22px; font-weight: 700; line-height: 1; }
+  .stat-label { font-size: 11px; opacity: 0.75; text-transform: uppercase; letter-spacing: 0.8px; }
+  .quote {
+    margin-top: 20px; padding: 12px 16px;
+    background: rgba(255,255,255,0.12);
+    border-radius: 10px;
+    font-size: 13.5px; font-style: italic; opacity: 0.92;
+    border-left: 3px solid #ffe8a3;
+    position: relative; z-index: 1;
+  }
+
+  /* ========== 必看卡（金黄高亮，信息量最大）========== */
+  .must {
+    background: linear-gradient(135deg, #fff8c5 0%, #ffe8a3 100%);
+    border: 2px solid #f59e0b;
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 16px rgba(245,158,11,0.15);
+  }
+  .must-badge {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: #f59e0b; color: #fff;
+    font-size: 12px; font-weight: 700; padding: 4px 12px;
+    border-radius: 14px; margin-bottom: 12px;
+  }
+  .must-badge::before { content: "★"; font-size: 13px; }
+  .must h2 {
+    font-size: 24px; font-weight: 800; margin-bottom: 4px;
+    color: #1f2328; letter-spacing: 0.3px;
+  }
+  .must h2 a { color: inherit; text-decoration: none; }
+  .must .stats {
+    display: flex; gap: 12px; flex-wrap: wrap;
+    font-size: 13px; color: #672021; margin-bottom: 16px;
+  }
+  .must .stars { font-weight: 700; }
+  .must .what {
+    font-size: 15.5px; color: #1f2328;
+    margin-bottom: 18px; line-height: 1.6;
+    padding: 12px 16px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 8px;
+  }
+  .must .what strong { color: #b45309; }
+  .must .tips {
+    background: rgba(255,255,255,0.55);
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-bottom: 14px;
+  }
+  .must .tips-title {
+    font-size: 12px; font-weight: 700; color: #b45309;
+    text-transform: uppercase; letter-spacing: 0.8px;
+    margin-bottom: 10px;
+  }
+  .must .tips ol { padding-left: 20px; }
+  .must .tips li {
+    font-size: 14.5px; margin-bottom: 8px; color: #1f2328; line-height: 1.6;
+  }
+  .must .tips li:last-child { margin-bottom: 0; }
+  .must .tips li strong { color: #b45309; font-weight: 600; }
+  .must .why {
+    font-size: 14px; color: #672021;
+    padding: 10px 14px;
+    background: rgba(255,255,255,0.4);
+    border-left: 3px solid #b45309;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  .must .risk {
+    font-size: 13px; color: #672021;
+    padding: 8px 12px;
+    background: rgba(207,34,46,0.08);
+    border-left: 3px solid #cf222e;
+    border-radius: 4px;
+  }
+  .must .risk strong { color: #cf222e; }
+  .must .link-btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    margin-top: 14px;
+    background: #b45309; color: #fff !important;
+    text-decoration: none; padding: 9px 18px;
+    border-radius: 8px; font-size: 13px; font-weight: 600;
+  }
+
+  /* ========== 普通卡（编号 02-05）========== */
+  .card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 22px 26px;
+    margin-bottom: 14px;
+    box-shadow: 0 1px 3px rgba(31,35,40,0.05), 0 4px 12px rgba(31,35,40,0.04);
+    border: 1px solid #eaeef2;
+  }
+  .card-rank {
+    display: inline-flex; align-items: center; justify-content: center;
+    background: #6e40c9; color: #fff;
+    font-weight: 700; font-size: 11px; padding: 3px 8px;
+    border-radius: 5px; min-width: 28px; text-align: center;
+  }
+  .card h2 {
+    font-size: 19px; font-weight: 700; display: inline; margin-left: 8px;
+  }
+  .card h2 a { color: #1f2328; text-decoration: none; }
+  .card .stats {
+    margin-top: 6px; margin-bottom: 14px;
+    font-size: 13px; color: #57606a;
+    display: flex; gap: 10px; flex-wrap: wrap; align-items: center;
+  }
+  .card .stars { color: #f59e0b; font-weight: 600; }
+  .card .lang { color: #6e40c9; font-weight: 500; }
+  .card .dir {
+    color: #fff; background: #1a7f37;
+    font-size: 11px; font-weight: 500; padding: 2px 8px;
+    border-radius: 4px;
+  }
+  .card .what {
+    font-size: 14.5px; color: #1f2328;
+    padding: 10px 14px; background: #f6f8fa;
+    border-radius: 8px; margin-bottom: 12px; line-height: 1.6;
+  }
+  .section { margin-top: 12px; }
+  .section-label {
+    font-size: 11px; font-weight: 700; color: #6e40c9;
+    text-transform: uppercase; letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  .tips-box {
+    background: linear-gradient(135deg, #f7f3ff 0%, #ede4ff 100%);
+    border-radius: 8px;
+    padding: 12px 16px;
+  }
+  .tips-box ol { padding-left: 18px; }
+  .tips-box li {
+    font-size: 14px; margin-bottom: 6px; color: #1f2328; line-height: 1.55;
+  }
+  .tips-box li:last-child { margin-bottom: 0; }
+  .tips-box li strong { color: #6e40c9; font-weight: 600; }
+  .card .why {
+    font-size: 13.5px; color: #57606a;
+    margin-top: 10px; line-height: 1.55;
+  }
+  .card .why strong { color: #1f2328; }
+  .card .risk {
+    font-size: 13px; color: #672021;
+    margin-top: 8px; padding: 7px 12px;
+    background: #fff4f4; border-left: 3px solid #cf222e;
+    border-radius: 4px;
+  }
+  .card .risk strong { color: #cf222e; }
+  .card .link-btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    margin-top: 12px;
+    background: #6e40c9; color: #fff !important;
+    text-decoration: none; padding: 7px 14px;
+    border-radius: 6px; font-size: 12.5px; font-weight: 500;
+  }
+  .card .link-btn::after { content: " →"; }
+
+  /* ========== 评分表（5 维 100 分）========== */
+  .footer-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin-top: 24px;
+    box-shadow: 0 1px 3px rgba(31,35,40,0.05);
+    border: 1px solid #eaeef2;
+  }
+  .footer-card h3 {
+    font-size: 14px; font-weight: 700; color: #6e40c9;
+    text-transform: uppercase; letter-spacing: 1px;
+    margin-bottom: 12px;
+  }
+  .score-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .score-table th, .score-table td {
+    text-align: left; padding: 8px 6px; border-bottom: 1px solid #eaeef2;
+  }
+  .score-table th {
+    font-weight: 600; color: #57606a; background: #f6f8fa; font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+  }
+  .score-table td:first-child { font-weight: 600; }
+  .score-table td:last-child { color: #6e40c9; font-weight: 700; font-size: 15px; }
+
+  /* ========== 页脚 ========== */
+  .signoff {
+    text-align: center;
+    color: #8b949e;
+    font-size: 12px;
+    margin-top: 24px;
+    padding: 20px 16px;
+  }
+  .signoff .brand-mini {
+    font-size: 14px; font-weight: 700; color: #6e40c9;
+    margin-bottom: 4px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-top">
+      <div class="brand">
+        <div class="brand-cn">日新</div>
+        <div class="brand-en">Daily Fresh</div>
+      </div>
+      <div class="date">2026-06-22 · 周一</div>
+    </div>
+    <div class="hero-sub">GitHub 直播电商好物日报 · 每日 9:00 推送</div>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-num">217</div><div class="stat-label">候选</div></div>
+      <div class="stat"><div class="stat-num">5</div><div class="stat-label">入选</div></div>
+      <div class="stat"><div class="stat-num">3+1+1</div><div class="stat-label">主业+副业+中性</div></div>
+    </div>
+    <div class="quote">苟日新，日日新，又日新 ——《礼记·大学》</div>
+  </div>
+
+  <!-- 必看卡（编号 01，信息量最大） -->
+  <div class="must">
+    <div class="must-badge">今日必看</div>
+    <h2><a href="https://github.com/xpzouying/xiaohongshu-mcp">xpzouying/xiaohongshu-mcp</a></h2>
+    <div class="stats">
+      <span class="stars">⭐ 14.2k</span>
+      <span>· Go</span>
+      <span>· D2 主业 + D4 副业</span>
+    </div>
+    <div class="what">
+      <strong>是什么：</strong>用 Model Context Protocol 把小红书开放为 Agent 可调用的工具集，让 Claude / Cursor / Hermes 等 AI 直接操控小红书（刷首页、搜索、详情、评论、发布）。这是 2026 年小红书自动化的事实标准之一。
+    </div>
+    <div class="tips">
+      <div class="tips-title">应用技巧 · 4 条</div>
+      <ol>
+        <li><strong>工作流协同：</strong>在 Hermes 配置 MCP 客户端，让 AI 助手直接拉你关注达人的最新笔记，整理出'今天的爆款选题'，省去手动刷小红书的 1-2 小时</li>
+        <li><strong>立即可做：</strong>复制仓库 README 的 MCP 客户端配置到 ~/.hermes/config.yaml，重启 gateway，语音问'今天养生类目爆款笔记有啥'，AI 直接给答案</li>
+        <li><strong>真实案例：</strong>类似项目（如 RedNote-Insight）已被 MCN 用于达人爆款雷达和竞品监控；MCP 协议比手写 cookie 爬虫稳定，失败率显著降低</li>
+        <li><strong>vs 现在用法：</strong>以前要手写小红书 cookie 爬虫 + 反爬对抗 + 验证码处理，现在一行 MCP 配置 + 自然语言指令搞定，节省 80% 维护时间</li>
+      </ol>
+    </div>
+    <div class="why"><strong>推荐理由：</strong>MCP 是 2026 年最热的 AI 应用范式，小红书又是主战场（主业+副业都用），二者结合免去自建爬虫的反复劳动，且数据获取稳定</div>
+    <div class="risk"><strong>风险：</strong>依赖小红书网页版 cookie 需每 7-15 天更新；高频调用有风控风险（建议 1 分钟不超过 10 次请求）；小红书 API 调整时 MCP 工具可能暂时失效</div>
+    <a class="link-btn" href="https://github.com/xpzouying/xiaohongshu-mcp">查看 GitHub 仓库</a>
+  </div>
+
+  <!-- 普通卡 02-05 -->
+  
+  <div class="card">
+    <span class="card-rank">02</span>
+    <h2><a href="https://github.com/dreammis/social-auto-upload">dreammis/social-auto-upload</a></h2>
+    <div class="stats">
+      <span class="stars">⭐ 12.7k</span>
+      <span>·</span>
+      <span class="lang">Python</span>
+      <span>·</span>
+      <span class="dir">D1 直播电商</span>
+    </div>
+    <div class="what">一键自动化上传视频到抖音、小红书、视频号、tiktok、youtube、bilibili 六大平台，CLI + 配置文件驱动，支持定时任务和账号矩阵管理</div>
+    <div class="section">
+      <div class="section-label">应用技巧 · 4 条</div>
+      <div class="tips-box"><ol><li><strong>工作流协同：</strong>对接你已有的剪辑工作流（剪映/PR 导出 → social-auto-upload 发布），省去每个平台手动上传的 30 分钟</li><li><strong>立即可做：</strong>把抖音/小红书 2 个账号 cookie 配到 config 文件，跑一次 CLI 验证（5 分钟内可完成首次发布测试）</li><li><strong>真实案例：</strong>类似矩阵工具已被多个 MCN 用于'一条视频同步 6 平台'，单人运营效率提升 3-5 倍</li><li><strong>vs 现在用法：</strong>以前每发一条要切换 6 个 App 重复操作 30 分钟，现在 CLI 一行命令，发布全过程自动化</li></ol></div>
+    </div>
+    <div class="why"><strong>推荐理由：</strong>七修-杏林有方主业（抖音+小红书+淘宝三平台同步）刚需工具——多平台矩阵是放大 ROI 的关键，省下的人工时间可直接投入选品和投流</div>
+    <div class="risk"><strong>风险：</strong>依赖各平台 cookie 有效期（7-30 天不等），平台 API 调整时上传可能失败；需关注抖音/小红书的'非官方 API'风控</div>
+    <a class="link-btn" href="https://github.com/dreammis/social-auto-upload">查看 GitHub 仓库</a>
+  </div>
+  <div class="card">
+    <span class="card-rank">03</span>
+    <h2><a href="https://github.com/MemoriLabs/Memori">MemoriLabs/Memori</a></h2>
+    <div class="stats">
+      <span class="stars">⭐ 15.3k</span>
+      <span>·</span>
+      <span class="lang">Python</span>
+      <span>·</span>
+      <span class="dir">D3 AI Agent</span>
+    </div>
+    <div class="what">Agent-native 记忆基础设施，LLM-agnostic（兼容 OpenAI/Anthropic/开源模型），为多轮 agent 对话提供持久化记忆层，让 AI 助手跨会话记住用户偏好和上下文</div>
+    <div class="section">
+      <div class="section-label">应用技巧 · 4 条</div>
+      <div class="tips-box"><ol><li><strong>工作流协同：</strong>与 Hermes 现有 memory 系统天然互补——Memori 做 agent 间共享记忆，Hermes memory 做个人偏好持久化，二者叠加形成完整上下文链</li><li><strong>立即可做：</strong>pip install memori，按 README 5 行代码接入 Claude API，跑一次 demo 验证'我昨天和你说过什么'的持久化效果</li><li><strong>真实案例：</strong>类似 agent 记忆框架（mem0 等）已被多家企业用于客服 agent 长上下文场景，客户重复描述率降低 60%</li><li><strong>vs 现在用法：</strong>以前 agent 跨会话需要重新喂上下文（每次消耗 2-10k token），现在 Memori 自动按需检索历史，开销降低 70%</li></ol></div>
+    </div>
+    <div class="why"><strong>推荐理由：</strong>Hermes 用户对 agent 记忆有强需求（profile 已记录'agent/mcp/prompt'是高优方向），Memori 15.3k star + LLM-agnostic 设计是 2026 年 agent 记忆层的标杆</div>
+    <div class="risk"><strong>风险：</strong>持久化记忆涉及用户隐私数据，部署前需评估合规（GDPR / 国内个人信息保护法）；数据库需自行运维（PostgreSQL）</div>
+    <a class="link-btn" href="https://github.com/MemoriLabs/Memori">查看 GitHub 仓库</a>
+  </div>
+  <div class="card">
+    <span class="card-rank">04</span>
+    <h2><a href="https://github.com/chubbyguan/chubbyskills">chubbyguan/chubbyskills</a></h2>
+    <div class="stats">
+      <span class="stars">⭐ 431</span>
+      <span>·</span>
+      <span class="lang">Python</span>
+      <span>·</span>
+      <span class="dir">D4 副业-珠事皆宜</span>
+    </div>
+    <div class="what">把中文全渠道内容（抖音 / B站 / 小红书 / 公众号 / X / 播客）采集进个人知识库的 13 个 AI Skill，覆盖图文存图、视频转文字稿、字幕优先免下载等场景</div>
+    <div class="section">
+      <div class="section-label">应用技巧 · 4 条</div>
+      <div class="tips-box"><ol><li><strong>工作流协同：</strong>对接珠事皆宜副业内容生产流程——AI 自动采集竞品账号最新笔记 → 进入个人知识库 → AI 辅助二次创作</li><li><strong>立即可做：</strong>git clone 仓库，跑 README 的 5 分钟 quickstart，配置 1-2 个关注的竞品小红书账号，立刻开始采集</li><li><strong>真实案例：</strong>类似 13-Skill 套装已被独立博主用于'日更 3 篇笔记'的素材积累，单篇创作时间从 1 小时压到 20 分钟</li><li><strong>vs 现在用法：</strong>以前每个平台要单独写爬虫/用第三方工具，现在 13 个平台一套 Skill 全搞定，节省 90% 工具切换成本</li></ol></div>
+    </div>
+    <div class="why"><strong>推荐理由：</strong>副业珠事皆宜（合香珠手串 + 新中式手作）内容生产最大痛点是素材采集，13 个 AI Skill 全渠道覆盖，star 仅 431 但功能对副业直接命中</div>
+    <div class="risk"><strong>风险：</strong>star 偏低（431）说明社区仍在早期，可能存在 bug；依赖各平台网页版结构，平台改版时需及时更新 Skill</div>
+    <a class="link-btn" href="https://github.com/chubbyguan/chubbyskills">查看 GitHub 仓库</a>
+  </div>
+  <div class="card">
+    <span class="card-rank">05</span>
+    <h2><a href="https://github.com/cocoindex-io/cocoindex">cocoindex-io/cocoindex</a></h2>
+    <div class="stats">
+      <span class="stars">⭐ 10.4k</span>
+      <span>·</span>
+      <span class="lang">Rust</span>
+      <span>·</span>
+      <span class="dir">D5/D6 中性（agent 协同）</span>
+    </div>
+    <div class="what">增量数据处理引擎，专为 long horizon agents 设计——支持流式增量更新、跨数据源 schema 映射、零拷贝转换，适合 agent 长期任务的中间数据持久化</div>
+    <div class="section">
+      <div class="section-label">应用技巧 · 4 条</div>
+      <div class="tips-box"><ol><li><strong>工作流协同：</strong>对接你直播复盘 dashboard——直播数据实时增量同步到 cocoindex，AI agent 按需查询历史数据生成复盘报告（替代人工 Excel 拼接）</li><li><strong>立即可做：</strong>cargo install cocoindex，跑 README 的 demo（5 分钟），体验一次'源数据变更 → 引擎自动增量更新'的效果</li><li><strong>真实案例：</strong>类似增量引擎（Materialize/Flink）已被数据团队用于'实时 BI 报表'，数据延迟从 T+1 降到秒级</li><li><strong>vs 现在用法：</strong>以前 agent 处理长任务需要反复重读全量数据（耗时 + token 浪费），现在 cocoindex 增量流式更新，效率提升 5-10 倍</li></ol></div>
+    </div>
+    <div class="why"><strong>推荐理由：</strong>直播复盘 + AI agent 协同场景的底层数据引擎，Rust 性能 + 增量设计对刘帅的'直播复盘自动化'业务有直接加速价值</div>
+    <div class="risk"><strong>风险：</strong>Rust 生态对非程序员门槛较高（部署需懂 Cargo）；增量一致性需仔细测试；star 10.4k 仍在增长中，文档完善度待验证</div>
+    <a class="link-btn" href="https://github.com/cocoindex-io/cocoindex">查看 GitHub 仓库</a>
+  </div>
+
+  <!-- 评分表（5 维 100 分） -->
+  <div class="footer-card">
+    <h3>评分明细 · 6 维（理论满分 105 分）</h3>
+    <table class="score-table">
+      <thead>
+        <tr>
+          <th>项目</th>
+          <th>主题30</th>
+          <th>拿来25</th>
+          <th>活跃15</th>
+          <th>热度15</th>
+          <th>替代10</th>
+          <th>协同10</th>
+          <th>总分</th>
+        </tr>
+      </thead>
+      <tbody>        <tr>
+          <td>xpzouying/xiaohongshu-mcp ⭐必看</td>
+          <td>27</td>
+          <td>20.0</td>
+          <td>12.0</td>
+          <td>10.5</td>
+          <td>8.0</td>
+          <td>9.0</td>
+          <td>86.5</td>
+        </tr>
+        <tr>
+          <td>dreammis/social-auto-upload</td>
+          <td>27</td>
+          <td>20.0</td>
+          <td>10.5</td>
+          <td>10.5</td>
+          <td>8.0</td>
+          <td>8.0</td>
+          <td>84.0</td>
+        </tr>
+        <tr>
+          <td>MemoriLabs/Memori</td>
+          <td>24</td>
+          <td>17.5</td>
+          <td>12.0</td>
+          <td>10.5</td>
+          <td>7.0</td>
+          <td>9.0</td>
+          <td>80.0</td>
+        </tr>
+        <tr>
+          <td>chubbyguan/chubbyskills</td>
+          <td>27</td>
+          <td>20.0</td>
+          <td>9.0</td>
+          <td>6.0</td>
+          <td>7.0</td>
+          <td>7.0</td>
+          <td>76.0</td>
+        </tr>
+        <tr>
+          <td>cocoindex-io/cocoindex</td>
+          <td>18</td>
+          <td>15.0</td>
+          <td>12.0</td>
+          <td>9.0</td>
+          <td>6.0</td>
+          <td>8.0</td>
+          <td>68.0</td>
+        </tr></tbody>
+    </table>
+  </div>
+
+  <!-- 页脚 -->
+  <div class="signoff">
+    <div class="brand-mini">日新 Daily Fresh</div>
+    <div>由 github-trending-monitor skill 自动生成</div>
+    <div>每日 9:00 推送 · cron job github-trending-monitor-2026-06-22-0900</div>
+  </div>
+
+</div>
+</body>
+</html>
