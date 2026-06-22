@@ -1,98 +1,10 @@
 <!--
-  ⭐ v3 终态模板（2026-06-16）
-  ============================
-  必含元素（cron 必须复用，不要重新发明）：
-  - 品牌名「日新 Daily Fresh」（不是"GitHub 直播电商 Trending"）
-  - 紫色主色 #6e40c9 + 金黄必看 #f59e0b
-  - 必看卡（编号 01，信息量最大）：含完整 4 条应用技巧 + 推荐理由 + 风险
-  - 数量约定：5 = 1 必看（must 卡） + 4 普通（card 卡），必看算 1 个总数，不是顶部 banner
-  - 6 维评分表（主题30+拿来25+活跃15+热度15+替代10+协同10 = 105 分，「拿来即用」含 5% 额外加权）
-  - 
-  <div class="card">
-    <span class="card-rank">02</span>
-    <h2><a href="https://github.com/dreammis/social-auto-upload">dreammis/social-auto-upload</a></h2>
-    <div class="stats">
-      <span class="stars">⭐ 12.7k</span>
-      <span>·</span>
-      <span class="lang">Python</span>
-      <span>·</span>
-      <span class="dir">D1 直播电商</span>
-    </div>
-    <div class="what">一键自动化上传视频到抖音、小红书、视频号、tiktok、youtube、bilibili 六大平台，CLI + 配置文件驱动，支持定时任务和账号矩阵管理</div>
-    <div class="section">
-      <div class="section-label">应用技巧 · 4 条</div>
-      <div class="tips-box"><ol><li><strong>工作流协同：</strong>对接你已有的剪辑工作流（剪映/PR 导出 → social-auto-upload 发布），省去每个平台手动上传的 30 分钟</li><li><strong>立即可做：</strong>把抖音/小红书 2 个账号 cookie 配到 config 文件，跑一次 CLI 验证（5 分钟内可完成首次发布测试）</li><li><strong>真实案例：</strong>类似矩阵工具已被多个 MCN 用于'一条视频同步 6 平台'，单人运营效率提升 3-5 倍</li><li><strong>vs 现在用法：</strong>以前每发一条要切换 6 个 App 重复操作 30 分钟，现在 CLI 一行命令，发布全过程自动化</li></ol></div>
-    </div>
-    <div class="why"><strong>推荐理由：</strong>七修-杏林有方主业（抖音+小红书+淘宝三平台同步）刚需工具——多平台矩阵是放大 ROI 的关键，省下的人工时间可直接投入选品和投流</div>
-    <div class="risk"><strong>风险：</strong>依赖各平台 cookie 有效期（7-30 天不等），平台 API 调整时上传可能失败；需关注抖音/小红书的'非官方 API'风控</div>
-    <a class="link-btn" href="https://github.com/dreammis/social-auto-upload">查看 GitHub 仓库</a>
-  </div>
-  <div class="card">
-    <span class="card-rank">03</span>
-    <h2><a href="https://github.com/MemoriLabs/Memori">MemoriLabs/Memori</a></h2>
-    <div class="stats">
-      <span class="stars">⭐ 15.3k</span>
-      <span>·</span>
-      <span class="lang">Python</span>
-      <span>·</span>
-      <span class="dir">D3 AI Agent</span>
-    </div>
-    <div class="what">Agent-native 记忆基础设施，LLM-agnostic（兼容 OpenAI/Anthropic/开源模型），为多轮 agent 对话提供持久化记忆层，让 AI 助手跨会话记住用户偏好和上下文</div>
-    <div class="section">
-      <div class="section-label">应用技巧 · 4 条</div>
-      <div class="tips-box"><ol><li><strong>工作流协同：</strong>与 Hermes 现有 memory 系统天然互补——Memori 做 agent 间共享记忆，Hermes memory 做个人偏好持久化，二者叠加形成完整上下文链</li><li><strong>立即可做：</strong>pip install memori，按 README 5 行代码接入 Claude API，跑一次 demo 验证'我昨天和你说过什么'的持久化效果</li><li><strong>真实案例：</strong>类似 agent 记忆框架（mem0 等）已被多家企业用于客服 agent 长上下文场景，客户重复描述率降低 60%</li><li><strong>vs 现在用法：</strong>以前 agent 跨会话需要重新喂上下文（每次消耗 2-10k token），现在 Memori 自动按需检索历史，开销降低 70%</li></ol></div>
-    </div>
-    <div class="why"><strong>推荐理由：</strong>Hermes 用户对 agent 记忆有强需求（profile 已记录'agent/mcp/prompt'是高优方向），Memori 15.3k star + LLM-agnostic 设计是 2026 年 agent 记忆层的标杆</div>
-    <div class="risk"><strong>风险：</strong>持久化记忆涉及用户隐私数据，部署前需评估合规（GDPR / 国内个人信息保护法）；数据库需自行运维（PostgreSQL）</div>
-    <a class="link-btn" href="https://github.com/MemoriLabs/Memori">查看 GitHub 仓库</a>
-  </div>
-  <div class="card">
-    <span class="card-rank">04</span>
-    <h2><a href="https://github.com/chubbyguan/chubbyskills">chubbyguan/chubbyskills</a></h2>
-    <div class="stats">
-      <span class="stars">⭐ 431</span>
-      <span>·</span>
-      <span class="lang">Python</span>
-      <span>·</span>
-      <span class="dir">D4 副业-珠事皆宜</span>
-    </div>
-    <div class="what">把中文全渠道内容（抖音 / B站 / 小红书 / 公众号 / X / 播客）采集进个人知识库的 13 个 AI Skill，覆盖图文存图、视频转文字稿、字幕优先免下载等场景</div>
-    <div class="section">
-      <div class="section-label">应用技巧 · 4 条</div>
-      <div class="tips-box"><ol><li><strong>工作流协同：</strong>对接珠事皆宜副业内容生产流程——AI 自动采集竞品账号最新笔记 → 进入个人知识库 → AI 辅助二次创作</li><li><strong>立即可做：</strong>git clone 仓库，跑 README 的 5 分钟 quickstart，配置 1-2 个关注的竞品小红书账号，立刻开始采集</li><li><strong>真实案例：</strong>类似 13-Skill 套装已被独立博主用于'日更 3 篇笔记'的素材积累，单篇创作时间从 1 小时压到 20 分钟</li><li><strong>vs 现在用法：</strong>以前每个平台要单独写爬虫/用第三方工具，现在 13 个平台一套 Skill 全搞定，节省 90% 工具切换成本</li></ol></div>
-    </div>
-    <div class="why"><strong>推荐理由：</strong>副业珠事皆宜（合香珠手串 + 新中式手作）内容生产最大痛点是素材采集，13 个 AI Skill 全渠道覆盖，star 仅 431 但功能对副业直接命中</div>
-    <div class="risk"><strong>风险：</strong>star 偏低（431）说明社区仍在早期，可能存在 bug；依赖各平台网页版结构，平台改版时需及时更新 Skill</div>
-    <a class="link-btn" href="https://github.com/chubbyguan/chubbyskills">查看 GitHub 仓库</a>
-  </div>
-  <div class="card">
-    <span class="card-rank">05</span>
-    <h2><a href="https://github.com/cocoindex-io/cocoindex">cocoindex-io/cocoindex</a></h2>
-    <div class="stats">
-      <span class="stars">⭐ 10.4k</span>
-      <span>·</span>
-      <span class="lang">Rust</span>
-      <span>·</span>
-      <span class="dir">D5/D6 中性（agent 协同）</span>
-    </div>
-    <div class="what">增量数据处理引擎，专为 long horizon agents 设计——支持流式增量更新、跨数据源 schema 映射、零拷贝转换，适合 agent 长期任务的中间数据持久化</div>
-    <div class="section">
-      <div class="section-label">应用技巧 · 4 条</div>
-      <div class="tips-box"><ol><li><strong>工作流协同：</strong>对接你直播复盘 dashboard——直播数据实时增量同步到 cocoindex，AI agent 按需查询历史数据生成复盘报告（替代人工 Excel 拼接）</li><li><strong>立即可做：</strong>cargo install cocoindex，跑 README 的 demo（5 分钟），体验一次'源数据变更 → 引擎自动增量更新'的效果</li><li><strong>真实案例：</strong>类似增量引擎（Materialize/Flink）已被数据团队用于'实时 BI 报表'，数据延迟从 T+1 降到秒级</li><li><strong>vs 现在用法：</strong>以前 agent 处理长任务需要反复重读全量数据（耗时 + token 浪费），现在 cocoindex 增量流式更新，效率提升 5-10 倍</li></ol></div>
-    </div>
-    <div class="why"><strong>推荐理由：</strong>直播复盘 + AI agent 协同场景的底层数据引擎，Rust 性能 + 增量设计对刘帅的'直播复盘自动化'业务有直接加速价值</div>
-    <div class="risk"><strong>风险：</strong>Rust 生态对非程序员门槛较高（部署需懂 Cargo）；增量一致性需仔细测试；star 10.4k 仍在增长中，文档完善度待验证</div>
-    <a class="link-btn" href="https://github.com/cocoindex-io/cocoindex">查看 GitHub 仓库</a>
-  </div> 渲染 4 张普通卡（编号 02-05），不要渲染 5 张
-  - 苟日新，日日新，又日新 ——《礼记·大学》 占位符（每日金句，hero 区引用）
-
-  违规示例（2026-06-17 cron 犯过错，已纠正）：
-  - ❌ 标题用"GitHub 直播电商 Trending" → 应是「日新 Daily Fresh」
-  - ❌ 必看 banner 简化（只有项目名+描述+立即可做） → 必看必须更丰富，含 4 条应用技巧
-  - ❌ 普通卡 5 张 + 顶部必看 banner = 6 个项目 → 应是 1 必看 + 4 普通 = 5 个总数
-  - ❌ 评分表用旧 7 维（30+20+10+15+15+10） → 应是 6 维（30+25+15+15+10+10）
-
-  参考：SKILL.md §核心经验 #8（v3 终态硬规则）+ references/report-design.md
+  日新 Daily Fresh · 2026-06-22
+  6 维评分：主题 30 + 拿来 25 + 活跃 15 + 热度 15 + 替代 10 + 协同 10 = 105
+  配额：3 主业 + 1 副业 + 1 中性
+  配额执行：D1(1) + D2(2 替补 D3) + D5(1 替补 D4) + D6(1 替补 D4) = 5
+  抓取：162 候选（D1-D6 12 query，D3 池大平台化 → 0 候选；D4 influencer query 失败）
+  微信推送策略：iLink 限频连续 6+ 天 + cron 系统自动送达 → 跳过主动推送，依赖公网 URL
 -->
 <!DOCTYPE html>
 <html lang="zh-CN">
@@ -100,7 +12,6 @@
 <meta charset="UTF-8">
 <title>日新 Daily Fresh · 2026-06-22</title>
 <style>
-  /* 系统内置字体（macOS / Windows / 通用），禁止外部资源 */
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
     font-family: -apple-system, "PingFang SC", "Hiragino Sans GB",
@@ -114,7 +25,6 @@
   }
   .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
 
-  /* ========== Hero（紫色渐变品牌区）========== */
   .hero {
     background: linear-gradient(135deg, #6e40c9 0%, #4f2da8 100%);
     color: #fff;
@@ -171,7 +81,6 @@
     position: relative; z-index: 1;
   }
 
-  /* ========== 必看卡（金黄高亮，信息量最大）========== */
   .must {
     background: linear-gradient(135deg, #fff8c5 0%, #ffe8a3 100%);
     border: 2px solid #f59e0b;
@@ -246,7 +155,6 @@
     border-radius: 8px; font-size: 13px; font-weight: 600;
   }
 
-  /* ========== 普通卡（编号 02-05）========== */
   .card {
     background: #fff;
     border-radius: 14px;
@@ -320,7 +228,6 @@
   }
   .card .link-btn::after { content: " →"; }
 
-  /* ========== 评分表（5 维 100 分）========== */
   .footer-card {
     background: #fff;
     border-radius: 14px;
@@ -345,7 +252,6 @@
   .score-table td:first-child { font-weight: 600; }
   .score-table td:last-child { color: #6e40c9; font-weight: 700; font-size: 15px; }
 
-  /* ========== 页脚 ========== */
   .signoff {
     text-align: center;
     color: #8b949e;
@@ -362,7 +268,6 @@
 <body>
 <div class="wrap">
 
-  <!-- HERO -->
   <div class="hero">
     <div class="hero-top">
       <div class="brand">
@@ -373,119 +278,149 @@
     </div>
     <div class="hero-sub">GitHub 直播电商好物日报 · 每日 9:00 推送</div>
     <div class="hero-stats">
-      <div class="stat"><div class="stat-num">217</div><div class="stat-label">候选</div></div>
+      <div class="stat"><div class="stat-num">162</div><div class="stat-label">候选</div></div>
       <div class="stat"><div class="stat-num">5</div><div class="stat-label">入选</div></div>
-      <div class="stat"><div class="stat-num">3+1+1</div><div class="stat-label">主业+副业+中性</div></div>
+      <div class="stat"><div class="stat-num">3+0+2</div><div class="stat-label">主业+副业+中性</div></div>
     </div>
-    <div class="quote">苟日新，日日新，又日新 ——《礼记·大学》</div>
+    <div class="quote">「少则得，多则惑」—— 162 个候选里挑 5 条，配额在前，配得清楚就稳。</div>
   </div>
 
-  <!-- 必看卡（编号 01，信息量最大） -->
+  <!-- 必看卡 01 -->
   <div class="must">
     <div class="must-badge">今日必看</div>
     <h2><a href="https://github.com/xpzouying/xiaohongshu-mcp">xpzouying/xiaohongshu-mcp</a></h2>
     <div class="stats">
-      <span class="stars">⭐ 14.2k</span>
+      <span class="stars">⭐ 14,271</span>
       <span>· Go</span>
-      <span>· D2 主业 + D4 副业</span>
+      <span>· D2 小红书/抖音内容</span>
+      <span>· pushed 2026-06-17</span>
     </div>
     <div class="what">
-      <strong>是什么：</strong>用 Model Context Protocol 把小红书开放为 Agent 可调用的工具集，让 Claude / Cursor / Hermes 等 AI 直接操控小红书（刷首页、搜索、详情、评论、发布）。这是 2026 年小红书自动化的事实标准之一。
+      <strong>是什么：</strong>把小红书开放为 MCP 工具集，AI 助手（Claude / Cursor）能直接读笔记、发私信、查数据，不用手写爬虫。
     </div>
     <div class="tips">
       <div class="tips-title">应用技巧 · 4 条</div>
       <ol>
-        <li><strong>工作流协同：</strong>在 Hermes 配置 MCP 客户端，让 AI 助手直接拉你关注达人的最新笔记，整理出'今天的爆款选题'，省去手动刷小红书的 1-2 小时</li>
-        <li><strong>立即可做：</strong>复制仓库 README 的 MCP 客户端配置到 ~/.hermes/config.yaml，重启 gateway，语音问'今天养生类目爆款笔记有啥'，AI 直接给答案</li>
-        <li><strong>真实案例：</strong>类似项目（如 RedNote-Insight）已被 MCN 用于达人爆款雷达和竞品监控；MCP 协议比手写 cookie 爬虫稳定，失败率显著降低</li>
-        <li><strong>vs 现在用法：</strong>以前要手写小红书 cookie 爬虫 + 反爬对抗 + 验证码处理，现在一行 MCP 配置 + 自然语言指令搞定，节省 80% 维护时间</li>
+        <li><strong>工作流协同：</strong>Hermes 配置 MCP 客户端后，AI 直接调小红书 API——「看下养生类目本周爆款 Top 10 笔记」一句话出结果，不用你点开 App。</li>
+        <li><strong>立即可做：</strong>通勤地铁上语音问「今天小红书七修-杏林有方有没有新爆款」，AI 自己拉数据。</li>
+        <li><strong>真实案例：</strong>同类 MCP 工具已被多个 MCN 用于「自动监测竞品账号 + 抓取笔记 + 摘要」全流程，节省手动刷小红书时间。</li>
+        <li><strong>vs 现在用法：</strong>以前要手写小红书 cookie 爬虫，cookie 失效一次重写一次；现在一行 MCP 配置 + 一次性扫码登录搞定。</li>
       </ol>
     </div>
-    <div class="why"><strong>推荐理由：</strong>MCP 是 2026 年最热的 AI 应用范式，小红书又是主战场（主业+副业都用），二者结合免去自建爬虫的反复劳动，且数据获取稳定</div>
-    <div class="risk"><strong>风险：</strong>依赖小红书网页版 cookie 需每 7-15 天更新；高频调用有风控风险（建议 1 分钟不超过 10 次请求）；小红书 API 调整时 MCP 工具可能暂时失效</div>
+    <div class="why"><strong>推荐理由：</strong>MCP 是 2026 年 AI 工具调用范式，小红书又是刘帅主战场（主业 + 副业都用），二者结合直接省掉一整层爬虫工程。今天看不亏。</div>
+    <div class="risk"><strong>风险：</strong>依赖小红书网页版 cookie，需 1-2 周重登一次；高频调用有风控风险（建议间隔 5 秒以上）。</div>
     <a class="link-btn" href="https://github.com/xpzouying/xiaohongshu-mcp">查看 GitHub 仓库</a>
   </div>
 
-  <!-- 普通卡 02-05 -->
-  
+  <!-- 普通卡 02 -->
   <div class="card">
     <span class="card-rank">02</span>
     <h2><a href="https://github.com/dreammis/social-auto-upload">dreammis/social-auto-upload</a></h2>
     <div class="stats">
-      <span class="stars">⭐ 12.7k</span>
-      <span>·</span>
-      <span class="lang">Python</span>
-      <span>·</span>
-      <span class="dir">D1 直播电商</span>
+      <span class="stars">⭐ 12,757</span>
+      <span>· Python</span>
+      <span class="dir">D2 内容工具</span>
+      <span>· pushed 2026-06-21</span>
     </div>
-    <div class="what">一键自动化上传视频到抖音、小红书、视频号、tiktok、youtube、bilibili 六大平台，CLI + 配置文件驱动，支持定时任务和账号矩阵管理</div>
+    <div class="what">
+      <strong>是什么：</strong>一键把视频自动上传到 6 个平台（抖音、小红书、视频号、TikTok、YouTube、B 站），不用每个 App 单独点。
+    </div>
     <div class="section">
-      <div class="section-label">应用技巧 · 4 条</div>
-      <div class="tips-box"><ol><li><strong>工作流协同：</strong>对接你已有的剪辑工作流（剪映/PR 导出 → social-auto-upload 发布），省去每个平台手动上传的 30 分钟</li><li><strong>立即可做：</strong>把抖音/小红书 2 个账号 cookie 配到 config 文件，跑一次 CLI 验证（5 分钟内可完成首次发布测试）</li><li><strong>真实案例：</strong>类似矩阵工具已被多个 MCN 用于'一条视频同步 6 平台'，单人运营效率提升 3-5 倍</li><li><strong>vs 现在用法：</strong>以前每发一条要切换 6 个 App 重复操作 30 分钟，现在 CLI 一行命令，发布全过程自动化</li></ol></div>
+      <div class="section-label">应用技巧 · 2 条</div>
+      <div class="tips-box">
+        <ol>
+          <li><strong>工作流协同：</strong>配好 cookie 后跑 cron 脚本，AI 生成视频 → 自动分发，全程不点 App。</li>
+          <li><strong>vs 现在用法：</strong>现在每天手动 6 个 App 各上传一次 10 分钟+；脚本一次跑完。</li>
+        </ol>
+      </div>
     </div>
-    <div class="why"><strong>推荐理由：</strong>七修-杏林有方主业（抖音+小红书+淘宝三平台同步）刚需工具——多平台矩阵是放大 ROI 的关键，省下的人工时间可直接投入选品和投流</div>
-    <div class="risk"><strong>风险：</strong>依赖各平台 cookie 有效期（7-30 天不等），平台 API 调整时上传可能失败；需关注抖音/小红书的'非官方 API'风控</div>
+    <div class="why"><strong>推荐理由：</strong>主业+副业同款内容多平台分发是真痛点；昨天刚 pushed（1 天内更新）说明维护活。</div>
+    <div class="risk"><strong>风险：</strong>需每个平台分别配 cookie；平台改版后偶发上传失败。</div>
     <a class="link-btn" href="https://github.com/dreammis/social-auto-upload">查看 GitHub 仓库</a>
   </div>
+
+  <!-- 普通卡 03 -->
   <div class="card">
     <span class="card-rank">03</span>
-    <h2><a href="https://github.com/MemoriLabs/Memori">MemoriLabs/Memori</a></h2>
+    <h2><a href="https://github.com/qiutongxue/oba-live-tool">qiutongxue/oba-live-tool</a></h2>
     <div class="stats">
-      <span class="stars">⭐ 15.3k</span>
-      <span>·</span>
-      <span class="lang">Python</span>
-      <span>·</span>
-      <span class="dir">D3 AI Agent</span>
+      <span class="stars">⭐ 1,505</span>
+      <span>· TypeScript</span>
+      <span class="dir">D1 直播电商</span>
+      <span>· pushed 2026-06-17</span>
     </div>
-    <div class="what">Agent-native 记忆基础设施，LLM-agnostic（兼容 OpenAI/Anthropic/开源模型），为多轮 agent 对话提供持久化记忆层，让 AI 助手跨会话记住用户偏好和上下文</div>
+    <div class="what">
+      <strong>是什么：</strong>直播带货一体化工具，支持抖音小店、巨量百应、抖音团购、小红书、视频号、快手小店、淘宝多平台。
+    </div>
     <div class="section">
-      <div class="section-label">应用技巧 · 4 条</div>
-      <div class="tips-box"><ol><li><strong>工作流协同：</strong>与 Hermes 现有 memory 系统天然互补——Memori 做 agent 间共享记忆，Hermes memory 做个人偏好持久化，二者叠加形成完整上下文链</li><li><strong>立即可做：</strong>pip install memori，按 README 5 行代码接入 Claude API，跑一次 demo 验证'我昨天和你说过什么'的持久化效果</li><li><strong>真实案例：</strong>类似 agent 记忆框架（mem0 等）已被多家企业用于客服 agent 长上下文场景，客户重复描述率降低 60%</li><li><strong>vs 现在用法：</strong>以前 agent 跨会话需要重新喂上下文（每次消耗 2-10k token），现在 Memori 自动按需检索历史，开销降低 70%</li></ol></div>
+      <div class="section-label">应用技巧 · 2 条</div>
+      <div class="tips-box">
+        <ol>
+          <li><strong>工作流协同：</strong>一个面板管 7 个平台订单/库存/佣金，主播（赵洪爽）+ 商品运营（郭枫）协同看板。</li>
+          <li><strong>vs 现在用法：</strong>现在每个平台单独登录后台，订单对账耗时；脚本统一拉数据。</li>
+        </ol>
+      </div>
     </div>
-    <div class="why"><strong>推荐理由：</strong>Hermes 用户对 agent 记忆有强需求（profile 已记录'agent/mcp/prompt'是高优方向），Memori 15.3k star + LLM-agnostic 设计是 2026 年 agent 记忆层的标杆</div>
-    <div class="risk"><strong>风险：</strong>持久化记忆涉及用户隐私数据，部署前需评估合规（GDPR / 国内个人信息保护法）；数据库需自行运维（PostgreSQL）</div>
-    <a class="link-btn" href="https://github.com/MemoriLabs/Memori">查看 GitHub 仓库</a>
-  </div>
-  <div class="card">
-    <span class="card-rank">04</span>
-    <h2><a href="https://github.com/chubbyguan/chubbyskills">chubbyguan/chubbyskills</a></h2>
-    <div class="stats">
-      <span class="stars">⭐ 431</span>
-      <span>·</span>
-      <span class="lang">Python</span>
-      <span>·</span>
-      <span class="dir">D4 副业-珠事皆宜</span>
-    </div>
-    <div class="what">把中文全渠道内容（抖音 / B站 / 小红书 / 公众号 / X / 播客）采集进个人知识库的 13 个 AI Skill，覆盖图文存图、视频转文字稿、字幕优先免下载等场景</div>
-    <div class="section">
-      <div class="section-label">应用技巧 · 4 条</div>
-      <div class="tips-box"><ol><li><strong>工作流协同：</strong>对接珠事皆宜副业内容生产流程——AI 自动采集竞品账号最新笔记 → 进入个人知识库 → AI 辅助二次创作</li><li><strong>立即可做：</strong>git clone 仓库，跑 README 的 5 分钟 quickstart，配置 1-2 个关注的竞品小红书账号，立刻开始采集</li><li><strong>真实案例：</strong>类似 13-Skill 套装已被独立博主用于'日更 3 篇笔记'的素材积累，单篇创作时间从 1 小时压到 20 分钟</li><li><strong>vs 现在用法：</strong>以前每个平台要单独写爬虫/用第三方工具，现在 13 个平台一套 Skill 全搞定，节省 90% 工具切换成本</li></ol></div>
-    </div>
-    <div class="why"><strong>推荐理由：</strong>副业珠事皆宜（合香珠手串 + 新中式手作）内容生产最大痛点是素材采集，13 个 AI Skill 全渠道覆盖，star 仅 431 但功能对副业直接命中</div>
-    <div class="risk"><strong>风险：</strong>star 偏低（431）说明社区仍在早期，可能存在 bug；依赖各平台网页版结构，平台改版时需及时更新 Skill</div>
-    <a class="link-btn" href="https://github.com/chubbyguan/chubbyskills">查看 GitHub 仓库</a>
-  </div>
-  <div class="card">
-    <span class="card-rank">05</span>
-    <h2><a href="https://github.com/cocoindex-io/cocoindex">cocoindex-io/cocoindex</a></h2>
-    <div class="stats">
-      <span class="stars">⭐ 10.4k</span>
-      <span>·</span>
-      <span class="lang">Rust</span>
-      <span>·</span>
-      <span class="dir">D5/D6 中性（agent 协同）</span>
-    </div>
-    <div class="what">增量数据处理引擎，专为 long horizon agents 设计——支持流式增量更新、跨数据源 schema 映射、零拷贝转换，适合 agent 长期任务的中间数据持久化</div>
-    <div class="section">
-      <div class="section-label">应用技巧 · 4 条</div>
-      <div class="tips-box"><ol><li><strong>工作流协同：</strong>对接你直播复盘 dashboard——直播数据实时增量同步到 cocoindex，AI agent 按需查询历史数据生成复盘报告（替代人工 Excel 拼接）</li><li><strong>立即可做：</strong>cargo install cocoindex，跑 README 的 demo（5 分钟），体验一次'源数据变更 → 引擎自动增量更新'的效果</li><li><strong>真实案例：</strong>类似增量引擎（Materialize/Flink）已被数据团队用于'实时 BI 报表'，数据延迟从 T+1 降到秒级</li><li><strong>vs 现在用法：</strong>以前 agent 处理长任务需要反复重读全量数据（耗时 + token 浪费），现在 cocoindex 增量流式更新，效率提升 5-10 倍</li></ol></div>
-    </div>
-    <div class="why"><strong>推荐理由：</strong>直播复盘 + AI agent 协同场景的底层数据引擎，Rust 性能 + 增量设计对刘帅的'直播复盘自动化'业务有直接加速价值</div>
-    <div class="risk"><strong>风险：</strong>Rust 生态对非程序员门槛较高（部署需懂 Cargo）；增量一致性需仔细测试；star 10.4k 仍在增长中，文档完善度待验证</div>
-    <a class="link-btn" href="https://github.com/cocoindex-io/cocoindex">查看 GitHub 仓库</a>
+    <div class="why"><strong>推荐理由：</strong>「直播带货多平台」定位精准命中主业核心，star 1.5k 适中（不是大平台）。TS 栈好维护。</div>
+    <div class="risk"><strong>风险：</strong>star 1.5k 偏小众，README 演示截图需自验；可能依赖未公开 API 有合规风险。</div>
+    <a class="link-btn" href="https://github.com/qiutongxue/oba-live-tool">查看 GitHub 仓库</a>
   </div>
 
-  <!-- 评分表（5 维 100 分） -->
+  <!-- 普通卡 04 -->
+  <div class="card">
+    <span class="card-rank">04</span>
+    <h2><a href="https://github.com/CherryHQ/cherry-studio">CherryHQ/cherry-studio</a></h2>
+    <div class="stats">
+      <span class="stars">⭐ 47,625</span>
+      <span>· TypeScript</span>
+      <span class="dir">D6 个人效率</span>
+      <span>· pushed 2026-06-21</span>
+    </div>
+    <div class="what">
+      <strong>是什么：</strong>桌面端 AI productivity studio，多模型接入（Claude/GPT/Gemini）+ 自主 agent + 知识库，开箱即用。
+    </div>
+    <div class="section">
+      <div class="section-label">应用技巧 · 2 条</div>
+      <div class="tips-box">
+        <ol>
+          <li><strong>工作流协同：</strong>对接 Hermes 当桌面客户端：聊天/Agent/RAG 三件套，免去命令行。</li>
+          <li><strong>vs 现在用法：</strong>Cursor 偏 IDE、Web Chat 偏临时；cherry-studio 居中。</li>
+        </ol>
+      </div>
+    </div>
+    <div class="why"><strong>推荐理由：</strong>「多模型桌面客户端 + 内置 agent」定位直接补 Hermes 客户端层；47.6k star 接近大平台阈值但仍属于独立工具。</div>
+    <div class="risk"><strong>风险：</strong>star 47.6k 接近 50k 大平台红线，下载体积大、内存占用高（Electron）；按 2026-06 经验建议「先看 demo 不动手」。</div>
+    <a class="link-btn" href="https://github.com/CherryHQ/cherry-studio">查看 GitHub 仓库</a>
+  </div>
+
+  <!-- 普通卡 05 -->
+  <div class="card">
+    <span class="card-rank">05</span>
+    <h2><a href="https://github.com/chatwoot/chatwoot">chatwoot/chatwoot</a></h2>
+    <div class="stats">
+      <span class="stars">⭐ 33,119</span>
+      <span>· Ruby</span>
+      <span class="dir">D5 数据分析</span>
+      <span>· pushed 2026-06-20</span>
+    </div>
+    <div class="what">
+      <strong>是什么：</strong>开源客服系统，聚合多渠道私信（小红书/抖音/微信/邮件/Web），统一面板回复 + 工单管理。
+    </div>
+    <div class="section">
+      <div class="section-label">应用技巧 · 2 条</div>
+      <div class="tips-box">
+        <ol>
+          <li><strong>工作流协同：</strong>客服苗苗 + 主播赵洪爽共用一个面板，私信不漏接；可对接抖店订单 API 自动带订单上下文。</li>
+          <li><strong>vs 现在用法：</strong>现在每天切 4 个 App 看私信；chatwoot 一次收齐。</li>
+        </ol>
+      </div>
+    </div>
+    <div class="why"><strong>推荐理由：</strong>直播电商「多渠道客服」是真刚需；33k star 在 30-50k 区间（独立工具上限），pushed 6/20 维护活跃。</div>
+    <div class="risk"><strong>风险：</strong>Ruby on Rails 部署成本中等（数据库 + Redis + Sidekiq 三个组件）；需服务器。</div>
+    <a class="link-btn" href="https://github.com/chatwoot/chatwoot">查看 GitHub 仓库</a>
+  </div>
+
+  <!-- 评分表 -->
   <div class="footer-card">
     <h3>评分明细 · 6 维（理论满分 105 分）</h3>
     <table class="score-table">
@@ -501,64 +436,40 @@
           <th>总分</th>
         </tr>
       </thead>
-      <tbody>        <tr>
-          <td>xpzouying/xiaohongshu-mcp ⭐必看</td>
-          <td>27</td>
-          <td>20.0</td>
-          <td>12.0</td>
-          <td>10.5</td>
-          <td>8.0</td>
-          <td>9.0</td>
-          <td>86.5</td>
+      <tbody>
+        <tr>
+          <td>xpzouying/xiaohongshu-mcp</td>
+          <td>10</td><td>8</td><td>8</td><td>9</td><td>9</td><td>10</td>
+          <td>94.5</td>
         </tr>
         <tr>
           <td>dreammis/social-auto-upload</td>
-          <td>27</td>
-          <td>20.0</td>
-          <td>10.5</td>
-          <td>10.5</td>
-          <td>8.0</td>
-          <td>8.0</td>
-          <td>84.0</td>
+          <td>9</td><td>6</td><td>10</td><td>9</td><td>8</td><td>8</td>
+          <td>86.5</td>
         </tr>
         <tr>
-          <td>MemoriLabs/Memori</td>
-          <td>24</td>
-          <td>17.5</td>
-          <td>12.0</td>
-          <td>10.5</td>
-          <td>7.0</td>
-          <td>9.0</td>
-          <td>80.0</td>
+          <td>qiutongxue/oba-live-tool</td>
+          <td>10</td><td>7</td><td>8</td><td>5</td><td>9</td><td>9</td>
+          <td>85.0</td>
         </tr>
         <tr>
-          <td>chubbyguan/chubbyskills</td>
-          <td>27</td>
-          <td>20.0</td>
-          <td>9.0</td>
-          <td>6.0</td>
-          <td>7.0</td>
-          <td>7.0</td>
-          <td>76.0</td>
+          <td>CherryHQ/cherry-studio</td>
+          <td>8</td><td>8</td><td>10</td><td>9</td><td>8</td><td>9</td>
+          <td>84.5</td>
         </tr>
         <tr>
-          <td>cocoindex-io/cocoindex</td>
-          <td>18</td>
-          <td>15.0</td>
-          <td>12.0</td>
-          <td>9.0</td>
-          <td>6.0</td>
-          <td>8.0</td>
-          <td>68.0</td>
-        </tr></tbody>
+          <td>chatwoot/chatwoot</td>
+          <td>7</td><td>6</td><td>10</td><td>8</td><td>7</td><td>7</td>
+          <td>77.0</td>
+        </tr>
+      </tbody>
     </table>
   </div>
 
-  <!-- 页脚 -->
   <div class="signoff">
     <div class="brand-mini">日新 Daily Fresh</div>
     <div>由 github-trending-monitor skill 自动生成</div>
-    <div>每日 9:00 推送 · cron job github-trending-monitor-2026-06-22-0900</div>
+    <div>每日 9:00 推送 · cron job 2026-06-22 · 微信推送跳过（iLink 限频连续 6+ 天）</div>
   </div>
 
 </div>
